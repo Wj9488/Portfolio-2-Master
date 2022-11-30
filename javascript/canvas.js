@@ -9,7 +9,7 @@ canvas.width = window.innerWidth;
 
 const particleNumber = 2;
 const joiningLineWidth = 0.25;
-const onClickLineNumber = 300;
+const onClickLineNumber = 100;
 // If on mouse follow mode change this value to sub 20 to not crash computer
 
 window.addEventListener("resize", () => {
