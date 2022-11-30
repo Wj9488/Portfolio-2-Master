@@ -11,6 +11,10 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 .preloader__container {
   position: absolute;
   margin-top: 0%;
@@ -56,19 +60,18 @@ body {
   border-radius: 20px;
   margin: 2%;
 }
-.welcome__container .hero__container .hero__cta {
-  color: #3a3a3a;
-  font-size: 2vw;
-  font-weight: 200;
-}
 
 .content__container {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
 }
+.content__container #top {
+  margin-top: 0%;
+}
 .content__container .scalable__container {
-  height: 100vh;
+  text-align: center;
+  margin-top: 5%;
 }
 .content__container .scalable__container .scalable__header {
   color: #3a3a3a;
@@ -80,5 +83,20 @@ body {
 .content__container .scalable__container .scalable__descriptor {
   color: #3a3a3a;
   font-size: 2.5vw;
+  font-weight: normal;
+}
+.content__container .scalable__container .scalable__link a {
+  color: #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
+}
+.content__container .scalable__container .scalable__link a:hover {
+  cursor: pointer;
+}
+.content__container .scalable__container .scalable__small_text {
+  color: #3a3a3a;
+  font-size: 2vw;
   font-weight: 200;
+}
+.content__container .scalable__container .highlighted__text {
+  font-weight: 500;
 }/*# sourceMappingURL=styles.css.map */

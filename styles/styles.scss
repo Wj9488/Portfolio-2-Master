@@ -14,6 +14,10 @@ body{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 
 .preloader__container {
@@ -55,17 +59,18 @@ body{
             border-radius: 20px;
             margin: 2%;
         }
-        .hero__cta {
-            @include descriptorComponent($normalTextColor, 2vw);
-            font-weight: 200;
-        }
     }
 }
 
 .content__container{
     @include quickMargin(90%);
+    #top {
+        margin-top: 0%;
+    }
     .scalable__container{
-        height: 100vh;
+        text-align: center;
+        margin-top: 5%;
+        // height: 100vh;
         // scroll-snap-type: start;
         .scalable__header {
             @include headerComponent($normalTextColor, 5vw);
@@ -73,7 +78,21 @@ body{
         }
         .scalable__descriptor {
             @include descriptorComponent($normalTextColor, 2.5vw);
+            font-weight: normal;
+        }
+        .scalable__link a{
+            color: $normalTextColor;
+            border-bottom: 1px solid $normalTextColor;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .scalable__small_text {
+            @include descriptorComponent($normalTextColor, 2vw);
             font-weight: 200;
+        }
+        .highlighted__text {
+            font-weight: 500;
         }
     }
 }

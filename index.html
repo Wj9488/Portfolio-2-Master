@@ -12,11 +12,11 @@
     <meta property="og:description" content="I'm Will, a front end web developer. Check out my website!">
     <meta property="og:url" content="">
     <link rel="stylesheet" href="./Styles/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <!-- <script src="./Javascript/animations.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" defer></script>
     <script src="./javascript/loader.js" defer></script>
     <script src="./javascript/canvas.js" defer></script>
+    <script src="./javascript/canvasTwo.js" defer></script>
     <title>Will Jones</title>
 </head>
 <body>
@@ -35,22 +35,39 @@
 
     <div class="welcome__container">
         <div class="hero__container">
-            <h1 class="hero__heading">Hi, I'm Will a front end developer from the UK.</h1>
+            <h1 class="hero__heading">Hi, I'm Will an aspiring front end developer.</h1>
             <div class="hero__divider"></div>
-            <p class="hero__cta">Scroll to get to know me</p>
         </div>
     </div>
 
     <div class="content__container">
+        <div class="scalable__container" id="top">
+            <h2 class="scalable__header" id="header1">About me</h2>
+            <p class="scalable__descriptor">
+                I'm currently studying business and management at the <span class="scalable__link"><a href="https://www.exeter.ac.uk/" target="_blank">University of Exeter</a></span>. 
+                While being a student takes up a lot of my time, I enjoy spending my spare time working on my own projects. 
+                <br>
+                <br>
+                I use <span class="highlighted__text">HTML5, CSS, SCSS, Javascript, React, and GSAP</span> to build out my projects and have significant experience 
+                with advanced concepts in each of these languages and frameworks.
+            </p>
+        </div>
         <div class="scalable__container">
-            <!-- <canvas id="effectCanvas"></canvas> -->
-            <h2 class="scalable__header">About me<span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span></h2>
-            <p class="scalable__descriptor"></p>
+            <h2 class="scalable__header" id="header1">Some of my work</h2>
+            <p class="scalable__descriptor">
+                - <span class="scalable__link"><a href="https://www.exeter.ac.uk/" target="_blank">Exam Tracker</a></span>
+            </p>
+        </div>
+        <div class="scalable__container">
+            <h2 class="scalable__header" id="header1">HTML canvas experiments</h2>
+            <p class="scalable__small_text">1. Network Effect</p>
+            <canvas id="canvasOne"></canvas>
+        </div>
+        <div class="scalable__container">
+            <p class="scalable__small_text">2. Particle Effect</p>
+            <canvas id="canvasTwo"></canvas>
         </div>
     </div>
-
-
-
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

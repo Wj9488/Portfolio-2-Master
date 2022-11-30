@@ -1,6 +1,6 @@
 console.log("Canvas connected")
 
-const canvas = document.getElementById("canvasOne");
+const canvas = document.getElementById("canvasTwo");
 const ctx = canvas.getContext("2d");
 const particlesArray = [];
 
@@ -42,10 +42,10 @@ window.addEventListener("mousemove", (e) => {
 
 class Particle {
   constructor() {
-  // this.x = mouse.x;
-  // this.y = mouse.y;
-  this.x = Math.random() * canvas.width;
-  this.y = Math.random() * canvas.height;
+  this.x = mouse.x;
+  this.y = mouse.y;
+//   this.x = Math.random() * canvas.width;
+//   this.y = Math.random() * canvas.height;
   this.size = Math.random() * 5 + 1;
   this.speedX = Math.random() * 3 - 1.5;
   this.speedY = Math.random() * 3 - 1.5;
