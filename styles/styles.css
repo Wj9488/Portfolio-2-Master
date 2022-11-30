@@ -69,6 +69,9 @@ a {
 .content__container #top {
   margin-top: 0%;
 }
+.content__container #bottom {
+  margin-bottom: 5%;
+}
 .content__container .scalable__container {
   text-align: left;
   margin-top: 5%;
