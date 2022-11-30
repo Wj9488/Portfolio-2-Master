@@ -133,7 +133,7 @@ a{
             align-items: center;
             .hero__heading {
                 text-align: center;
-                @include headerComponent($normalTextColor, 14vw);
+                @include headerComponent($normalTextColor, 12vw);
                 font-weight: 500;
             }
             .hero__divider {
