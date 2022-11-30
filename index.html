@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <!-- <script src="./Javascript/animations.js" defer></script> -->
     <script src="./javascript/loader.js" defer></script>
-    <script src="./javascript/main.js" defer></script>
+    <script src="./javascript/canvas.js" defer></script>
     <title>Will Jones</title>
 </head>
 <body>
@@ -31,11 +31,26 @@
         <div class="preloader__slider" id="stage5"></div>
     </div>
 
-    <div class="content__container">
+
+
+    <div class="welcome__container">
         <div class="hero__container">
-            <h1 class="hero__heading">Hi, I'm Will a website designer from the UK.</h1>
+            <h1 class="hero__heading">Hi, I'm Will a front end developer from the UK.</h1>
+            <div class="hero__divider"></div>
+            <p class="hero__cta">Scroll to get to know me</p>
         </div>
     </div>
+
+    <div class="content__container">
+        <div class="scalable__container">
+            <!-- <canvas id="effectCanvas"></canvas> -->
+            <h2 class="scalable__header">About me<span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span></h2>
+            <p class="scalable__descriptor"></p>
+        </div>
+    </div>
+
+
+
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

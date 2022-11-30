@@ -1,3 +1,4 @@
+console.log("Gsap connected")
 
 function preloader() {
     gsap.from(".preloader__text", {
@@ -47,14 +48,33 @@ function preloader() {
         display: "none",
     })
     gsap.from(".content__container", {
+        delay: 2.81,
+        duration: 0.1,
+        opacity: 0,
+        display: "none",
+    })
+    gsap.from(".welcome__container", {
         delay: 3.2, 
         opacity: 0,
         duration: 2,
     })
     gsap.from(".hero__heading", {
+        opacity: 0,
         delay: 3.3, 
         duration: 0.5,
-        x: -10,
+        y: -10,
     })
+    gsap.to(".hero__divider", {
+        delay: 4,
+        duration: 1,
+        width: "100%",
+    })
+    gsap.from(".hero__cta", {
+        opacity: 0,
+        delay: 4.4, 
+        duration: 0.5,
+        y: -10,
+    })
+
 }
 preloader()
