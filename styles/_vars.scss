@@ -1,0 +1,47 @@
+// COLOR 
+
+$normalTextColor: #3a3a3a; 
+$contrastTextColor: #fff;
+$workTextColor: black;
+$contactTextColor: black;
+$aboutTextColor: black;
+$resumeTextColor: black;
+
+
+// FONT SETTINGS
+
+$desktop_header_fontSize: 8vw;
+$desktop_section_header_fontSize: 6vw;
+$desktop_descriptor_fontSize: 4vw;
+
+$mobile_header_fontSize: 12vw;
+$mobile_section_header_fontSize: 10vw;
+$mobile_descriptor_fontSize: 6vw;
+
+// GLOBAL MIXINS
+
+@mixin quickMargin($mWidth) {
+    margin-left: auto;
+    margin-right: auto;
+    width: $mWidth;
+}
+
+// SCALABLE COMPONENTS 
+
+@mixin textWrapperComponent($Bgcol, $Pall, $Talign) {
+    background-color: $Bgcol;
+    padding: $Pall;
+    text-align: $Talign;
+}
+
+@mixin headerComponent($Mcolor, $hcFontSize) {
+    color: $Mcolor;
+    font-size: $hcFontSize;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+@mixin descriptorComponent($Dcolor, $dFontSize) {
+    color: $Dcolor;
+    font-size: $dFontSize;
+}
