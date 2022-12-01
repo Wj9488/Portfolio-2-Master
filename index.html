@@ -15,7 +15,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" defer></script>
     <script src="./javascript/loader.js" defer></script>
-    <script src="./javascript/canvas.js" defer></script>
+    <script src="./javascript/copy.js" defer></script>
+    <!-- <script src="./javascript/canvas.js" defer></script> -->
     <script src="./javascript/canvasTwo.js" defer></script>
     <title>Will Jones</title>
 </head>
@@ -59,8 +60,6 @@
                 <br>
                 - React
                 <br>
-                - Solid.js 
-                <br>
                 - Gsap
                 <br>
             </p>
@@ -68,7 +67,7 @@
         <div class="scalable__container">
             <h2 class="scalable__header" id="header1">Projects</h2>
             <p class="scalable__descriptor">
-                - <span class="scalable__link"><a href="https://www.exeter.ac.uk/" target="_blank">Exam Tracker</a></span>
+                - <span class="scalable__link"><a href="https://uoe-exam-info.netlify.app/" target="_blank">Exam Tracker</a></span>
             </p>
         </div>
         <!-- <div class="scalable__container">
@@ -79,11 +78,14 @@
             <p class="scalable__descriptor">- Particle Effect</p>
             <canvas id="canvasTwo"></canvas>
         </div> -->
-        <div class="scalable__container" id="bottom">
+        <div class="scalable__container">
             <h2 class="scalable__header" id="header1">Contact me</h2>
-            <p class="scalable__descriptor">
-                wtjones10@gmail.com
-            </p>
+               <input id="emailData" type="text" value="wtjones10@gmail.com" readonly>
+               <button class="email__copy" id="bottomDescript">Copy Email</button>
+           </div>
+        <div class="scalable__container" id="bottom">
+            <a class="social__link" href="https://www.linkedin.com/in/william-jones-450715251/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+               <a class="social__link" href="https://github.com/Wj9488" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
         </div>
     </div>
 

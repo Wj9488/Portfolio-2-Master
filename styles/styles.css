@@ -15,6 +15,14 @@ a {
   text-decoration: none;
 }
 
+textarea:focus, input:focus {
+  outline: none;
+}
+
+input {
+  margin-top: 5%;
+}
+
 .preloader__container {
   position: absolute;
   margin-top: 0%;
@@ -70,7 +78,10 @@ a {
   margin-top: 0%;
 }
 .content__container #bottom {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+}
+.content__container .bottomDescript {
+  margin-right: 5%;
 }
 .content__container .scalable__container {
   text-align: left;
@@ -87,6 +98,7 @@ a {
   color: #3a3a3a;
   font-size: 2.5vw;
   font-weight: normal;
+  margin-top: 5%;
 }
 .content__container .scalable__container .scalable__link a {
   color: #3a3a3a;
@@ -103,11 +115,33 @@ a {
 .content__container .scalable__container .highlighted__text {
   font-weight: 500;
 }
-.content__container .scalable__container #effectCanvas {
-  background-color: white;
-  position: absolute;
-  width: 100%;
-  height: 50vh;
+.content__container .scalable__container .social__link {
+  color: #3a3a3a;
+  font-size: 5vw;
+  margin-right: 5%;
+}
+.content__container .scalable__container .social__link:hover {
+  cursor: pointer;
+  color: rgba(58, 58, 58, 0.9);
+}
+.content__container .scalable__container .email__copy {
+  color: #3a3a3a;
+  font-size: 2.5vw;
+  padding: 1%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  transition: all 0.2s ease-in-out;
+}
+.content__container .scalable__container .email__copy:hover {
+  cursor: pointer;
+  color: rgba(58, 58, 58, 0.9);
+}
+.content__container .scalable__container #emailData {
+  color: #3a3a3a;
+  font-size: 2.5vw;
+  border: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1000px) {
@@ -134,7 +168,7 @@ a {
     width: 90%;
   }
   .welcome__container .hero__container {
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,6 +196,9 @@ a {
   }
   .content__container #top {
     margin-top: 0%;
+  }
+  .content__container #bottom {
+    margin-bottom: 30%;
   }
   .content__container .scalable__container {
     text-align: left;
@@ -195,10 +232,35 @@ a {
   .content__container .scalable__container .highlighted__text {
     font-weight: 500;
   }
-  .content__container .scalable__container #effectCanvas {
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 50vh;
+  .content__container .scalable__container .social__link {
+    text-align: left;
+    color: #3a3a3a;
+    font-size: 8vw;
+    margin-right: 5%;
+  }
+  .content__container .scalable__container .social__link:hover {
+    cursor: pointer;
+    color: rgba(58, 58, 58, 0.9);
+  }
+  .content__container .scalable__container .email__copy {
+    text-align: left;
+    color: #3a3a3a;
+    font-size: 5vw;
+    padding: 1%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    transition: all 0.2s ease-in-out;
+  }
+  .content__container .scalable__container .email__copy:hover {
+    cursor: pointer;
+    color: rgba(58, 58, 58, 0.9);
+  }
+  .content__container .scalable__container #emailData {
+    text-align: left;
+    color: #3a3a3a;
+    font-size: 5vw;
+    border: none;
+    background-color: transparent;
   }
 }/*# sourceMappingURL=styles.css.map */

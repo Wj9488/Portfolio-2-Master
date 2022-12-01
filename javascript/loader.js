@@ -52,11 +52,6 @@ function preloader() {
         delay: 2.4,
         display: "none",
     })
-    gsap.from(".content__container", {
-        duration: 0.1,
-        delay: 2.41,
-        display: "none",
-    })
     gsap.from(".welcome__container", {
         delay: 2.8, 
         opacity: 0,
@@ -73,13 +68,12 @@ function preloader() {
         duration: 1,
         width: "100%",
     })
-    gsap.from(".hero__cta", {
+    gsap.from(".content__container", {
+        duration: 1,
+        delay: 4,
         opacity: 0,
-        delay: 4.4, 
-        duration: 0.5,
-        y: -10,
+        display: "none",
     })
-
 }
 preloader()
 

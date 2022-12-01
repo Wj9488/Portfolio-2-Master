@@ -18,6 +18,13 @@ a{
     text-decoration: none;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input{
+    margin-top: 5%;
+}
 
 
 .preloader__container {
@@ -68,7 +75,10 @@ a{
         margin-top: 0%;
     }
     #bottom {
-        margin-bottom: 5%;
+        margin-bottom: 10%;
+    }
+    .bottomDescript{
+        margin-right: 5%;
     }
     .scalable__container{
         text-align: left;
@@ -82,6 +92,7 @@ a{
         .scalable__descriptor {
             @include descriptorComponent($normalTextColor, 2.5vw);
             font-weight: normal;
+            margin-top: 5%;
         }
         .scalable__link a{
             color: $normalTextColor;
@@ -97,12 +108,32 @@ a{
         .highlighted__text {
             font-weight: 500;
         }
-        #effectCanvas {
-        background-color: white;
-        position: absolute;
-        width: 100%;
-        height: 50vh;
-        } 
+        .social__link {
+            color: $normalTextColor;
+            font-size: 5vw;
+            margin-right: 5%;
+            &:hover{
+                cursor: pointer;
+                color: rgba(58, 58, 58, 0.9);
+            }
+        }
+        .email__copy{
+            @include descriptorComponent($normalTextColor, 2.5vw);
+            padding: 1%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $normalTextColor;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                cursor: pointer;
+                color: rgba(58, 58, 58, 0.9);
+            }
+        }
+        #emailData{
+            @include descriptorComponent($normalTextColor, 2.5vw);
+            border: none;
+            background-color: transparent;
+        }
     }
 }
 
@@ -129,7 +160,7 @@ a{
         @include quickMargin(90%);
         .hero__container{
             
-            height: 100vh;
+            height: 75vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -153,6 +184,9 @@ a{
         @include quickMargin(90%);
         #top {
             margin-top: 0%;
+        }
+        #bottom {
+            margin-bottom: 30%;
         }
         .scalable__container{
             text-align: left;
@@ -182,12 +216,42 @@ a{
             .highlighted__text {
                 font-weight: 500;
             }
-            #effectCanvas {
-            background-color: white;
-            position: absolute;
-            width: 100%;
-            height: 50vh;
-            } 
-        }
+            // #effectCanvas {
+            // background-color: white;
+            // position: absolute;
+            // width: 100%;
+            // height: 50vh;
+            // } 
+            .social__link {
+            text-align: left;
+                color: $normalTextColor;
+                font-size: 8vw;
+                margin-right: 5%;
+                &:hover{
+                    cursor: pointer;
+                    color: rgba(58, 58, 58, 0.9);
+                }
+            }
+            .email__copy{
+            text-align: left;
+                @include descriptorComponent($normalTextColor, 5vw);
+                padding: 1%;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $normalTextColor;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    color: rgba(58, 58, 58, 0.9);
+                }
+            }
+            #emailData{
+            text-align: left;
+                @include descriptorComponent($normalTextColor, 5vw);
+                border: none;
+                background-color: transparent;
+                
+            }
+        }  
     }
 }
