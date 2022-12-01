@@ -44,7 +44,7 @@ input {
 .welcome__container {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 70%;
 }
 .welcome__container .hero__container {
   height: 100vh;
@@ -56,7 +56,7 @@ input {
 .welcome__container .hero__container .hero__heading {
   text-align: center;
   color: #3a3a3a;
-  font-size: 8vw;
+  font-size: 60px;
   margin-bottom: 2%;
   margin-top: 2%;
   font-weight: 500;
@@ -89,14 +89,14 @@ input {
 }
 .content__container .scalable__container .scalable__header {
   color: #3a3a3a;
-  font-size: 5vw;
+  font-size: 40px;
   margin-bottom: 2%;
   margin-top: 2%;
   font-weight: 500;
 }
 .content__container .scalable__container .scalable__descriptor {
   color: #3a3a3a;
-  font-size: 2.5vw;
+  font-size: 25px;
   font-weight: normal;
   margin-top: 5%;
 }
@@ -107,17 +107,12 @@ input {
 .content__container .scalable__container .scalable__link a:hover {
   cursor: pointer;
 }
-.content__container .scalable__container .scalable__small_text {
-  color: #3a3a3a;
-  font-size: 2vw;
-  font-weight: 200;
-}
 .content__container .scalable__container .highlighted__text {
   font-weight: 500;
 }
 .content__container .scalable__container .social__link {
   color: #3a3a3a;
-  font-size: 5vw;
+  font-size: 40px;
   margin-right: 5%;
 }
 .content__container .scalable__container .social__link:hover {
@@ -126,7 +121,8 @@ input {
 }
 .content__container .scalable__container .email__copy {
   color: #3a3a3a;
-  font-size: 2.5vw;
+  font-size: 25px;
+  font-weight: normal;
   padding: 1%;
   background: transparent;
   border: none;
@@ -139,7 +135,7 @@ input {
 }
 .content__container .scalable__container #emailData {
   color: #3a3a3a;
-  font-size: 2.5vw;
+  font-size: 25px;
   border: none;
   background-color: transparent;
 }
