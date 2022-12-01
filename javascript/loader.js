@@ -1,11 +1,11 @@
 console.log("Gsap connected")
 
 function preloader() {
-    // const body = document.querySelector("body");
-    // body.style.overflow = "hidden";
-    // setInterval(() => {
-    //     body.style.overflow = "visible";
-    // }, 3100);
+    const body = document.querySelector("body");
+    body.style.overflow = "hidden";
+    setInterval(() => {
+        body.style.overflow = "visible";
+    }, 3100);
     gsap.from(".preloader__text", {
         duration: 1,
         opacity: 0, 
@@ -72,7 +72,6 @@ function preloader() {
         duration: 1,
         delay: 4,
         opacity: 0,
-        display: "none",
     })
 }
 preloader()
