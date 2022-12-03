@@ -66,25 +66,25 @@ function date() {
     const date = new Date();
     const day = date.getDay();
     if(day === 0) {
-        welcomeDay.textContent = " Sunday";
+        welcomeDay.textContent = " sunday";
     }
     if(day === 1) {
-        welcomeDay.textContent = " Monday";
+        welcomeDay.textContent = " monday";
     }
     if(day === 2) {
-        welcomeDay.textContent = " Tuesday";
+        welcomeDay.textContent = " tuesday";
     }
     if(day === 3) {
-        welcomeDay.textContent = " Wednesday";
+        welcomeDay.textContent = " wednesday";
     }
     if(day === 4) {
-        welcomeDay.textContent = " Thursday";
+        welcomeDay.textContent = " thursday";
     }
     if(day === 5) {
-        welcomeDay.textContent = " Friday";
+        welcomeDay.textContent = " friday";
     }
     else {
-        welcomeDay.textContent = " Saturday";
+        welcomeDay.textContent = " saturday";
     }
 }
 date();
