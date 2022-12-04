@@ -83,8 +83,8 @@ function date() {
     if(day === 5) {
         welcomeDay.textContent = " friday";
     }
-    else {
-        welcomeDay.textContent = " saturday";
+    if(day === 6) {
+      welcomeDay.textContent = " saturday";
     }
 }
 date();
