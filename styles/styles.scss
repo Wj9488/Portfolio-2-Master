@@ -139,14 +139,15 @@ input{
     .nav__container {
         position: sticky;
         top: 0;
+        padding-top: 2%;
         padding-left: 2%;
         padding-right: 2%;
-        min-height: 6vh;
+        min-height: 4vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .nav__logo {
-            height: 6vh;
+            height: 4vh;
         }
         .nav__links_container {
             display: flex;
@@ -154,7 +155,7 @@ input{
             align-items: center;
             .social__link {
                 color: $normalTextColor;
-                font-size: 30px;
+                font-size: 20px;
                 margin-right: 5%;
                 &:hover{
                     cursor: pointer;
@@ -167,8 +168,7 @@ input{
     .welcome__container{
         @include quickMargin(70%);
         .hero__container{
-            
-            height: 75vh;
+            height: 25vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -180,7 +180,7 @@ input{
             }
             .hero__divider {
                 background-color: $workTextColor;
-                height: 0.5vh;
+                height: 0.25vh;
                 width: 0.1%;
                 border-radius: 20px;
                 margin: 2%;
