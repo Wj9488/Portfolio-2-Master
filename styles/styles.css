@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;500;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -23,31 +23,13 @@ input {
   margin-top: 5%;
 }
 
-.preloader__container {
-  position: absolute;
-  margin-top: 0%;
-  width: 100vw;
-  height: 100vh;
-}
-.preloader__container .preloader__text {
-  position: absolute;
-  padding-top: 45vh;
-  text-align: center;
-  font-size: 20vw;
-  color: white;
-}
-.preloader__container .preloader__slider {
-  height: 20vh;
-  background-color: #3a3a3a;
-}
-
 .welcome__container {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
 }
 .welcome__container .hero__container {
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +54,7 @@ input {
 .content__container {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 70%;
 }
 .content__container #top {
   margin-top: 0%;
@@ -85,7 +67,7 @@ input {
 }
 .content__container .scalable__container {
   text-align: left;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 .content__container .scalable__container .scalable__header {
   color: #3a3a3a;
@@ -98,7 +80,7 @@ input {
   color: #3a3a3a;
   font-size: 25px;
   font-weight: normal;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 .content__container .scalable__container .scalable__link a {
   color: #3a3a3a;
@@ -141,23 +123,6 @@ input {
 }
 
 @media screen and (max-width: 1000px) {
-  .preloader__container {
-    position: absolute;
-    margin-top: 0%;
-    width: 100vw;
-    height: 100vh;
-  }
-  .preloader__container .preloader__text {
-    position: absolute;
-    padding-top: 45vh;
-    text-align: center;
-    font-size: 20vw;
-    color: white;
-  }
-  .preloader__container .preloader__slider {
-    height: 20vh;
-    background-color: #3a3a3a;
-  }
   .welcome__container {
     margin-left: auto;
     margin-right: auto;
