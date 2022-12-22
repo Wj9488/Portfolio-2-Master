@@ -6,9 +6,10 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: white;
 }
 
 a {
@@ -21,6 +22,35 @@ textarea:focus, input:focus {
 
 input {
   margin-top: 5%;
+}
+
+.nav__container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__container .nav__logo {
+  height: 8vh;
+}
+.nav__container .nav__links_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__container .nav__links_container .social__link {
+  color: #3a3a3a;
+  font-size: 30px;
+  margin-right: 5%;
+}
+.nav__container .nav__links_container .social__link:hover {
+  cursor: pointer;
+  color: rgba(58, 58, 58, 0.9);
 }
 
 .welcome__container {
@@ -37,14 +67,14 @@ input {
 }
 .welcome__container .hero__container .hero__heading {
   text-align: center;
-  color: #3a3a3a;
+  color: #343a40;
   font-size: 60px;
   margin-bottom: 2%;
   margin-top: 2%;
   font-weight: 500;
 }
 .welcome__container .hero__container .hero__divider {
-  background-color: #3a3a3a;
+  background-color: #343a40;
   height: 0.5vh;
   width: 0.1%;
   border-radius: 20px;
@@ -70,15 +100,15 @@ input {
   margin-top: 3%;
 }
 .content__container .scalable__container .scalable__header {
-  color: #3a3a3a;
-  font-size: 40px;
+  color: #343a40;
+  font-size: 30px;
   margin-bottom: 2%;
   margin-top: 2%;
   font-weight: 500;
 }
 .content__container .scalable__container .scalable__descriptor {
   color: #3a3a3a;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: normal;
   margin-top: 3%;
 }
@@ -92,18 +122,9 @@ input {
 .content__container .scalable__container .highlighted__text {
   font-weight: 500;
 }
-.content__container .scalable__container .social__link {
-  color: #3a3a3a;
-  font-size: 40px;
-  margin-right: 5%;
-}
-.content__container .scalable__container .social__link:hover {
-  cursor: pointer;
-  color: rgba(58, 58, 58, 0.9);
-}
 .content__container .scalable__container .email__copy {
   color: #3a3a3a;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: normal;
   padding: 1%;
   background: transparent;
@@ -117,16 +138,44 @@ input {
 }
 .content__container .scalable__container #emailData {
   color: #3a3a3a;
-  font-size: 25px;
+  font-size: 20px;
   border: none;
   background-color: transparent;
 }
 
 @media screen and (max-width: 1000px) {
+  .nav__container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    min-height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__container .nav__logo {
+    height: 6vh;
+  }
+  .nav__container .nav__links_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav__container .nav__links_container .social__link {
+    color: #3a3a3a;
+    font-size: 30px;
+    margin-right: 5%;
+  }
+  .nav__container .nav__links_container .social__link:hover {
+    cursor: pointer;
+    color: rgba(58, 58, 58, 0.9);
+  }
   .welcome__container {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 70%;
   }
   .welcome__container .hero__container {
     height: 75vh;
@@ -137,14 +186,14 @@ input {
   }
   .welcome__container .hero__container .hero__heading {
     text-align: center;
-    color: #3a3a3a;
-    font-size: 12vw;
+    color: #343a40;
+    font-size: 30px;
     margin-bottom: 2%;
     margin-top: 2%;
     font-weight: 500;
   }
   .welcome__container .hero__container .hero__divider {
-    background-color: #3a3a3a;
+    background-color: #343a40;
     height: 0.5vh;
     width: 0.1%;
     border-radius: 20px;
@@ -153,7 +202,7 @@ input {
   .content__container {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 70%;
   }
   .content__container #top {
     margin-top: 0%;
@@ -166,15 +215,15 @@ input {
     margin-top: 10%;
   }
   .content__container .scalable__container .scalable__header {
-    color: #3a3a3a;
-    font-size: 10vw;
+    color: #343a40;
+    font-size: 20px;
     margin-bottom: 2%;
     margin-top: 2%;
     font-weight: 500;
   }
   .content__container .scalable__container .scalable__descriptor {
     color: #3a3a3a;
-    font-size: 5vw;
+    font-size: 15px;
     font-weight: normal;
     margin-top: 5%;
   }
@@ -206,7 +255,8 @@ input {
   .content__container .scalable__container .email__copy {
     text-align: left;
     color: #3a3a3a;
-    font-size: 5vw;
+    font-size: 15px;
+    margin-top: 3%;
     padding: 1%;
     background: transparent;
     border: none;
@@ -220,7 +270,7 @@ input {
   .content__container .scalable__container #emailData {
     text-align: left;
     color: #3a3a3a;
-    font-size: 5vw;
+    font-size: 15px;
     border: none;
     background-color: transparent;
   }

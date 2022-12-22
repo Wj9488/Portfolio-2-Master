@@ -2,7 +2,7 @@
 
 $normalTextColor: #3a3a3a; 
 $contrastTextColor: #fff;
-$workTextColor: black;
+$workTextColor: #343a40;
 $contactTextColor: black;
 $aboutTextColor: black;
 $resumeTextColor: black;
@@ -11,12 +11,12 @@ $resumeTextColor: black;
 // FONT SETTINGS
 
 $desktop_header_fontSize: 60px;
-$desktop_section_header_fontSize: 40px;
-$desktop_descriptor_fontSize: 25px;
+$desktop_section_header_fontSize: 30px;
+$desktop_descriptor_fontSize: 20px;
 
-$mobile_header_fontSize: 12vw;
-$mobile_section_header_fontSize: 10vw;
-$mobile_descriptor_fontSize: 6vw;
+$mobile_header_fontSize: 30px;
+$mobile_section_header_fontSize: 20px;
+$mobile_descriptor_fontSize: 15px;
 
 // GLOBAL MIXINS
 
