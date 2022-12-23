@@ -28,7 +28,7 @@ function preloader() {
         opacity: 0,
     })
     gsap.from(".bg__blur", {
-        duration: 4, 
+        duration: 2, 
         opacity: 0, 
         delay: 1.8,
     })

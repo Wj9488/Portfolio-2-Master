@@ -39,10 +39,10 @@ input{
 }
 
 #bsq_two {
-    filter: blur(150px);
+    filter: blur(180px);
     position: absolute;
     top: 80%;
-    left: 100%;
+    left: 60%;
     width: 150px;
     height: 150px;
     background-color: #9523EF; 
@@ -57,10 +57,10 @@ input{
     background-color: #ef233c; 
 }
 #bsq_four {
-    filter: blur(120px);
+    filter: blur(180px);
     position: absolute;
-    top: 180%;
-    left: 100%;
+    top: 90%;
+    left: 50%;
     width: 120px;
     height: 120px;
     background-color: #ffbe0b; 
@@ -68,7 +68,7 @@ input{
 #bsq_five {
     filter: blur(350px);
     position: absolute;
-    bottom: 0%;
+    top: 120%;
     left: 0%;
     width: 300px;
     height: 300px;
@@ -85,6 +85,7 @@ input{
     justify-content: space-between;
     align-items: center;
     .nav__logo {
+        font-family: "Montserrat";
         font-weight: 900;
         font-size: $desktop_section_header_fontSize;
         color: $normalTextColor;
@@ -224,10 +225,10 @@ input{
         background-color: #ffbe0b; 
     }
     #bsq_five {
-        filter: blur(100px);
+        filter: blur(140px);
         position: absolute;
-        bottom: 0%;
-        left: 0%;
+        top: 10%;
+        left: 30%;
         width: 100px;
         height: 100px;
         background-color: #06d6a0; 
