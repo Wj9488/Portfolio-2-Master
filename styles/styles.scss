@@ -27,53 +27,6 @@ input{
     margin-top: 5%;
 }
 
-#bsq_one { 
-    filter: blur(200px);
-    position: absolute;
-    top: 30%;
-    left: 0%;
-    width: 200px;
-    height: 200px;
-    background-color: #3a86ff;
-}
-
-#bsq_two {
-    filter: blur(180px);
-    position: absolute;
-    top: 80%;
-    left: 60%;
-    width: 150px;
-    height: 150px;
-    background-color: #9523EF; 
-}
-#bsq__three {
-    filter: blur(150px);
-    position: absolute;
-    top: 120%;
-    left: 0%;
-    width: 100px;
-    height: 100px;
-    background-color: #ef233c; 
-}
-#bsq_four {
-    filter: blur(180px);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    width: 120px;
-    height: 120px;
-    background-color: #ffbe0b; 
-}
-#bsq_five {
-    filter: blur(350px);
-    position: absolute;
-    top: 120%;
-    left: 0%;
-    width: 300px;
-    height: 300px;
-    background-color: #06d6a0; 
-}
-
 .nav__container {
     position: sticky;
     top: 0;
@@ -198,43 +151,6 @@ input{
         width: 80px;
         height: 80px;
         background-color: #3a86ff;
-    }
-    
-    #bsq_two {
-        filter: blur(150px);
-        position: absolute;
-        top: 80%;
-        left: 40%;
-        width: 150px;
-        height: 150px;
-        background-color: #9523EF; 
-    }
-    #bsq__three {
-        filter: blur(80px);
-        position: absolute;
-        top: 100%;
-        left: 0%;
-        width: 70px;
-        height: 70px;
-        background-color: #ef233c; 
-    }
-    #bsq_four {
-        filter: blur(70px);
-        position: absolute;
-        top: 90%;
-        left: 30%;
-        width: 50px;
-        height: 50px;
-        background-color: #ffbe0b; 
-    }
-    #bsq_five {
-        filter: blur(140px);
-        position: absolute;
-        top: 10%;
-        left: 30%;
-        width: 100px;
-        height: 100px;
-        background-color: #06d6a0; 
     }
 
     .nav__container {
