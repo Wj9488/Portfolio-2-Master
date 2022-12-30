@@ -84,9 +84,6 @@ input{
 }
 
 .content__container{
-    background-color: rgb(128, 128, 128, 0.2);
-    padding: 2%;
-    border-radius: 20px;
     margin-bottom: 5%;
     @include quickMargin(70%);
     #top {
