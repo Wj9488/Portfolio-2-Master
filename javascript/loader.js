@@ -1,6 +1,6 @@
-console.log("Gsap connected")
+console.log("")
 
-function preloader() {
+window.addEventListener("DOMContentLoaded", () => {
     const body = document.querySelector("body");
     body.style.overflow = "hidden";
     setInterval(() => {
@@ -32,6 +32,17 @@ function preloader() {
         opacity: 0, 
         delay: 1.8,
     })
+})
+
+const buttonAnim = () => {
+    const copyBtn = document.querySelector(".email__copy");
+
+    copyBtn.addEventListener("click", () => {
+        console.log("copy__trig"); 
+    })
 }
-preloader()
+buttonAnim();
+
+
+
 
