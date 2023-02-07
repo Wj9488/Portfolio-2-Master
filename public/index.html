@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./imgs/tab__icon.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Will Jones, Will Jones portfolio, web design, website-design, Exeter website design, London website design, front end development uk">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./imgs/og__image.png">
+    <meta property="og:description" content="Hi I'm Will, a website developer. Check out my portfolio!">
+    <meta property="og:url" content="https://willjonesdev.co.uk/">
+    <link rel="stylesheet" href="./build.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="./anim.js" defer></script>
+    <script src="./app.js" defer></script>
+    <title>Will Jones | Personal Portfolio</title>
+  </head>
+  <body class="overflow-x-hidden bg-neutral-50 dark:bg-neutral-800">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKQ48KE9P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PXKQ48KE9P');
+    </script>
+
+    <div id="personalPortfolio__appWrap_v1">
+      <nav
+        id="nav__gsap_target" class="border-x border-b border-neutral-900 dark:border-neutral-300 rounded-b-2xl bg-white dark:bg-neutral-800 nav__height flex justify-around items-center lg:w-12/12 mr-auto ml-auto"
+      >
+        <div class="app__logo text-2xl dark:text-white">W/J</div>
+        <div>
+          <ul
+            class="flex items-center justify-around gap-8 lg:gap-5 font-medium"
+          >
+            <li><a href="#my-work" class="hover:text-blue-600 text-m dark:text-white">work</a></li>
+            <li><a href="#my-skills" class="hover:text-blue-600 text-m dark:text-white">skills</a></li>
+            <li><a href="#download-my-cv" class="hover:text-blue-600 text-m dark:text-white">cv</a></li>
+            <li><a href="#contact-me" class="hover:text-blue-600 text-m dark:text-white">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="md:w-7/12 mr-auto ml-auto" id="primary__content_container">
+        <header
+          class="section__height flex-row justify-center items-center mt-10"
+        >
+        <svg id="header__top_svg" width="256" height="83" viewBox="0 0 256 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M70.25 45.3971L7.99999 81.3372C5 83.0692 1.25 80.9042 1.25 77.4401V5.55994C1.25 2.09584 5 -0.0692186 8 1.66283L70.25 37.6029C73.25 39.3349 73.25 43.6651 70.25 45.3971Z" />
+            <path class="stroke-blue-600" d="M131.25 45.3971L69 81.3372C66 83.0692 62.25 80.9042 62.25 77.4401V5.55994C62.25 2.09584 66 -0.0692186 69 1.66283L131.25 37.6029C134.25 39.3349 134.25 43.6651 131.25 45.3971Z" />
+            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M192.25 45.3971L130 81.3372C127 83.0692 123.25 80.9042 123.25 77.4401V5.55994C123.25 2.09584 127 -0.0692186 130 1.66283L192.25 37.6029C195.25 39.3349 195.25 43.6651 192.25 45.3971Z" />
+            <path class="stroke-blue-600" d="M253.25 45.3971L191 81.3372C188 83.0692 184.25 80.9042 184.25 77.4401V5.55994C184.25 2.09584 188 -0.0692186 191 1.66283L253.25 37.6029C256.25 39.3349 256.25 43.6651 253.25 45.3971Z" />
+        </svg>
+            
+          <div class="mt-2 mb-2 w-10/12 mr-auto ml-auto">
+            <h1 class="site__header_control font-bold lg:text-6xl text-5xl dark:text-white">
+              <span id="header__span_gsap" class="text-blue-600"
+                >CREATING ENGAGING WEB EXPERIENCES
+              </span>
+              <span class="dark:text-blue-white" id="header__spanTwo_gsap">FOR YOUR PROJECT</span> 
+            </h1>
+          </div>
+
+        <svg class="svg__position" width="195" height="83" viewBox="0 0 195 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M2.75 37.6029L65 1.66283C68 -0.0692215 71.75 2.09584 71.75 5.55994V77.4401C71.75 80.9042 68 83.0692 65 81.3372L2.75 45.3971C-0.250003 43.6651 -0.250001 39.3349 2.75 37.6029Z" />
+            <path class="stroke-blue-600" d="M63.75 37.6029L126 1.66283C129 -0.0692215 132.75 2.09584 132.75 5.55994V77.4401C132.75 80.9042 129 83.0692 126 81.3372L63.75 45.3971C60.75 43.6651 60.75 39.3349 63.75 37.6029Z" />
+            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M124.75 37.6029L187 1.66283C190 -0.0692215 193.75 2.09584 193.75 5.55994V77.4401C193.75 80.9042 190 83.0692 187 81.3372L124.75 45.3971C121.75 43.6651 121.75 39.3349 124.75 37.6029Z" />
+        </svg>
+            
+
+          <div
+            class="flex items-center justify-center mt-6 text-4xl text-blue-600" id="header__arrow_gsap"
+          >
+
+            <svg id="header__arrow_svg" class="fill-neutral-900 dark:fill-neutral-50" width="16" height="49" viewBox="0 0 16 49" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.54289 47.7111C7.93342 48.1016 8.56658 48.1016 8.95711 47.7111L15.3211 41.3472C15.7116 40.9566 15.7116 40.3235 15.3211 39.9329C14.9305 39.5424 14.2974 39.5424 13.9069 39.9329L8.25 45.5898L2.59315 39.9329C2.20262 39.5424 1.56946 39.5424 1.17893 39.9329C0.788408 40.3235 0.788408 40.9566 1.17893 41.3472L7.54289 47.7111ZM7.25 0.998657L7.25 47.004H9.25L9.25 0.998657L7.25 0.998657Z"/>
+            </svg>
+            
+          </div>
+
+          <p id="header__p_gsap" class="w-10/12 mr-auto ml-auto mt-6 text-lg dark:text-white">
+            I'm Will, a website designer who's determined to help you level up
+            your website.
+          </p>
+
+        <svg id="header__bottom_svg" class="mt-6" width="256" height="83" viewBox="0 0 256 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke-blue-600" d="M131.25 45.3971L69 81.3372C66 83.0692 62.25 80.9042 62.25 77.4401V5.55994C62.25 2.09584 66 -0.0692186 69 1.66283L131.25 37.6029C134.25 39.3349 134.25 43.6651 131.25 45.3971Z"/>
+            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M192.25 45.3971L130 81.3372C127 83.0692 123.25 80.9042 123.25 77.4401V5.55994C123.25 2.09584 127 -0.0692186 130 1.66283L192.25 37.6029C195.25 39.3349 195.25 43.6651 192.25 45.3971Z"/>
+            <path class="stroke-blue-600" d="M253.25 45.3971L191 81.3372C188 83.0692 184.25 80.9042 184.25 77.4401V5.55994C184.25 2.09584 188 -0.0692186 191 1.66283L253.25 37.6029C256.25 39.3349 256.25 43.6651 253.25 45.3971Z"/>
+        </svg>
+        
+        <div id="content__gsap_fade"><!-- <- GSAP CONTENT WRAP START DIV -->
+
+        <section class="border border-neutral-900 dark:border-neutral-300 rounded-xl mt-6 p-4">
+          <p class="text-neutral-500 text-xs">WHAT I DO</p>
+          <h2 class="text-2xl text-blue-600 font-bold mt-2">
+            FROM CONCEPT TO CODE
+          </h2>
+          <p class="mt-2 text-lg dark:text-white">
+            I'll help you make your dream website a reality using modern
+            technologies to ensure it's both beautiful and performant, complete with modern additions like animations and automatic light and dark modes.
+          </p>
+        </section>
+
+        <section class="mt-10 lg:mt-20 p-4">
+          <p class="text-neutral-500 text-xs" id="my-work">ABOUT</p>
+          <h3 class="text-2xl text-blue-600 font-bold mt-2">
+            ABOUT ME
+          </h3>
+          <p class="mt-2 text-lg dark:text-white">
+            I'm a student at the University of Exeter studying Business and Management. However, about 8 months ago, I decided that I wanted
+            to learn how to code. Initially starting with Python my journey inevitably led to me learning how to build websites.
+            <br>
+            <br>
+            Having always had a passion for design I love being able to convert what I come up with into a working product that people can interact with.
+            <br>
+            <br>
+            Some of my other interests include, skiing, cryptocurrency trading, NFT flipping and going to the gym.   
+            <br>
+            <br>
+            Have a  
+                <span class="wordData" data-wait="1600" data-words='["phenomenal" ,"great" , "fantastic", "remarkable", "splendid", "relaxing", "productive", "terrific", "tremendous"]'>
+              </span> <span id="welcomeDay"></span>.
+          </p>
+        </section>
+
+        <section class="mt-10 lg:mt-20 p-4">
+          <p class="text-neutral-500 text-xs" id="my-work">SHOWCASE</p>
+          <h3 class="text-2xl text-blue-600 font-bold mt-2">
+            UI DESIGN
+          </h3>
+          <p class="mt-2 text-lg dark:text-white">
+            Some wireframes designed for fictional websites.
+          </p>
+          <!-- flex justify-around items-center flex-row lg:flex justify-around items-center -->
+          <div class="mt-6 flex-row lg:flex justify-around items-start">
+              <img src="./imgs/wireframe__1.png" alt="">
+              <img src="./imgs/wireframe__2 .png" alt="">
+              <img src="./imgs/wireframe__3.png" alt="">
+              <img src="./imgs/wireframe__4.png" alt="">
+          </div>
+        </section>
+
+        <section class="mt-10 lg:mt-20 p-4">
+          <h3 class="text-2xl text-blue-600 font-bold">WEBSITES</h3>
+          <p class="mt-2 text-xl font-semibold dark:text-white">Graphicpro</p>
+          <a href="https://graphicpro.netlify.app/" target="_blank">
+            <button
+              class="border border-neutral-900 dark:border-neutral-300 rounded-xl p-2 mt-3 flex justify-center items-center gap-2 dark:text-white"
+            >
+              <div>See live site</div>
+              <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
+            </button>
+          </a>
+          <p class="text-neutral-500 text-xs mt-3">ABOUT THE PROJECT</p>
+          <p class="mt-2 text-lg dark:text-white">
+            Being inspired by the recent advancements in AI art generating
+            technology I set out to create a landing page for a fictional
+            company that sells AI art services.
+          </p>
+          <div class="flex justify-start items-center flex-wrap mt-2 gap-5">
+            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+              Responsive Design
+            </p>
+            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+                Logo Design
+            </p>
+            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+              AI generated images
+            </p>
+            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+              Animations & Scroll Triggers
+            </p>
+            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+              Automatic light and dark Mode
+            </p>
+          </div>
+
+          <p class="mt-6 text-xl font-semibold dark:text-white">Personal Website</p>
+          <button class="border border-neutral-900 dark:border-neutral-300 rounded-xl p-2 mt-3 dark:text-white">
+            <div>This website</div>
+          </button>
+          <p class="text-neutral-500 text-xs mt-3">ABOUT THE PROJECT</p>
+          <p class="mt-2 text-lg dark:text-white">
+            Having spent over 8 months learning website development and the
+            theory behind designing professional websites I thought it necessary
+            to take the time to re-design my previously boring personal
+            portfolio to showcase what I have learned.
+          </p>
+          <div class="flex justify-start items-center flex-wrap mt-2 gap-5">
+            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+              Responsive Design
+            </p>
+            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+              Automatic light and dark mode
+            </p>
+            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+                SVG Animations
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="mt-10 lg:mt-20 flex-row lg:flex justify-between items-start gap-2" id="my-skills"
+        >
+          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 dark:border-neutral-300 p-4">
+            <p class="text-neutral-500 text-xs">LANGUAGES</p>
+            <h3 class="text-2xl text-blue-600 font-bold mt-2">
+              LANGUAGES I USE
+            </h3>
+            <p class="text-m mt-2 dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              HTML
+            </p>
+            <p class="text-m dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              CSS
+            </p>
+            <p class="text-m dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              Javascript
+            </p>
+            <p class="text-m dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              Python
+            </p>
+            <p class="text-m dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              Node.js
+            </p>
+          </div>
+          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 dark:border-neutral-300 p-4">
+            <p class="text-neutral-500 text-xs">FRAMEWORKS</p>
+            <h3 class="text-2xl text-blue-600 font-bold mt-2">
+              FRAMEWORKS I USE
+            </h3>
+            <p class="text-m mt-2 dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              Sveltekit
+            </p>
+            <p class="text-m dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              React
+            </p>
+            <p class="text-m dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              GSAP (animation)
+            </p>
+            <p class="text-m dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              SCSS (styling)
+            </p>
+            <p class="text-m dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              Tailwind (styling)
+            </p>
+          </div>
+          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 dark:border-neutral-300 p-4">
+            <p class="text-neutral-500 text-xs">LEARNING</p>
+            <h3 class="text-2xl text-blue-600 font-bold mt-2">
+              CURRENTLY LEARNING
+            </h3>
+            <p class="text-m mt-2 dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              Python webscraping
+            </p>
+            <p class="text-m dark:text-white">
+              <span class="mr-2 dark:text-white"
+                ><ion-icon name="checkmark-outline"></ion-icon
+              ></span>
+              Algorithms
+            </p>
+            <p class="text-m dark:text-white">
+                <span class="mr-2 dark:text-white"
+                  ><ion-icon name="checkmark-outline"></ion-icon
+                ></span>
+                Business management
+              </p>
+          </div>
+        </section>
+
+        <section class="mt-10 lg:mt-20 p-4">
+          <p class="text-neutral-500 text-xs" id="download-my-cv">CV</p>
+          <h2 class="text-2xl text-blue-600 font-bold mt-2">MY CV</h2>
+          <a href="https://docs.google.com/document/d/1QKDPeYw5DPARx3jppkvkSiqxN75rwg7C4a2Gds6Mfoc/edit?usp=sharing" target="_blank">
+            <button
+              class="border border-neutral-900 dark:border-neutral-300 rounded-xl p-2 mt-3 flex justify-center items-center gap-2 dark:text-white"
+            >
+              <div>View here</div>
+              <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
+            </button>
+          </a>
+        </section>
+
+        <section class="mt-10 lg:mt-20 p-4">
+          <p class="text-neutral-500 text-xs" id="contact-me">CONTACT</p>
+          <h2 class="text-2xl text-blue-600 font-bold mt-2">CONTACT ME</h2>
+          <a href="https://www.linkedin.com/in/william-jones-450715251/" target="_blank">
+            <button
+              class="border border-neutral-900 dark:border-neutral-300 rounded-xl p-2 mt-3 flex justify-center items-center gap-2 dark:text-white"
+            >
+              <div>Message me on LinkedIn</div>
+              <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
+            </button>
+          </a>
+
+          <p class="text-blue-600 mt-3 font-bold">OR</p>
+
+          <form
+            action="https://formsubmit.co/wtjones10@gmail.com"
+            method="POST"
+            class="mt-2"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://willjonesdev/thankyou.html"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Personal Portfolio Message"
+            />
+            <div class="mb-0 mt-2">
+              <p class="dark:text-white">Your name</p>
+              <input
+                type="text"
+                id="form__nameInput"
+                name="name"
+                class="mt-2 bg-neutral-100 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                required
+              />
+            </div>
+            <p class="mt-2 dark:text-white">Your email</p>
+            <div class="relative mt-2">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-5 h-5 text-neutral-500 dark:text-neutral-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  ></path>
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  ></path>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="form__emailInput"
+                name="email"
+                id="email-address-icon"
+                required
+                class="bg-neutral-100 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              />
+            </div>
+            <p class="mt-2 dark:text-white">Your message</p>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="4"
+              class="mt-2 block p-2.5 w-full text-sm text-neutral-900 bg-neutral-100 rounded-lg border border-neutral-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            >
+            </textarea>
+            <button type="submit" id="form__submitButton" class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Send message
+            </button>
+          </form>
+        </section>
+
+        <svg class="svg__position" width="195" height="83" viewBox="0 0 195 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M2.75 37.6029L65 1.66283C68 -0.0692215 71.75 2.09584 71.75 5.55994V77.4401C71.75 80.9042 68 83.0692 65 81.3372L2.75 45.3971C-0.250003 43.6651 -0.250001 39.3349 2.75 37.6029Z" />
+            <path class="stroke-blue-600" d="M63.75 37.6029L126 1.66283C129 -0.0692215 132.75 2.09584 132.75 5.55994V77.4401C132.75 80.9042 129 83.0692 126 81.3372L63.75 45.3971C60.75 43.6651 60.75 39.3349 63.75 37.6029Z" />
+            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M124.75 37.6029L187 1.66283C190 -0.0692215 193.75 2.09584 193.75 5.55994V77.4401C193.75 80.9042 190 83.0692 187 81.3372L124.75 45.3971C121.75 43.6651 121.75 39.3349 124.75 37.6029Z" />
+        </svg>
+
+      </div>
+
+      
+      </div><!--  <- END GSAP WRAP DIV -->
+
+      <footer
+        class="footer__height border-x border-t border-neutral-900 dark:border-neutral-300 rounded-t-2xl bg-white dark:bg-neutral-800 flex-row p-4 justify-around items-center mt-10 lg:mt-20 lg:w-12/12 mr-auto ml-auto"
+      >
+        <div class="flex-row lg:flex lg:justify-between">
+          <div>
+            <div class="app__logo text-2xl dark:text-white">W/J</div>
+            <p class="mt-2 text-m font-semibold dark:text-white">
+              Improving one project at a time.
+            </p>
+          </div>
+          <div>
+            <ul
+              class="flex items-center flex-wrap justify-start gap-5 mt-6 lg:gap-5 font-medium"
+            >
+              <li>
+                <a href="#" class="hover:text-blue-600 text-m dark:text-white">Back to top</a>
+              </li>
+              <li><a href="#my-work" class="hover:text-blue-600 text-m dark:text-white">work</a></li>
+            <li><a href="#my-skills" class="hover:text-blue-600 text-m dark:text-white">skills</a></li>
+              <li><a href="#download-my-cv" class="hover:text-blue-600 text-m dark:text-white">cv</a></li>
+              <li>
+                <a href="#contact-me" class="hover:text-blue-600 text-m dark:text-white">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="footer__divider_line w-12/12 mt-6 mr-auto ml-auto bg-neutral-900 dark:bg-neutral-50"
+        ></div>
+        <p class="text-neutral-500 mt-6 mb-6 text-xs lg:text-center">
+          Copyright © Will Jones 2023
+        </p>
+      </footer>
+
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

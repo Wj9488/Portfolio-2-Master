@@ -1,14 +1,5 @@
 
 
-// function fetchData() {
-//     const url = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=f1a8aa75096c8dcb70d713aedc14b11c"
-
-//     fetch(url)
-//     .then((res) => res.json())
-//     .then((data) => console.log(data))
-// }
-// fetchData();
-
 function typingAnimation() {
     
     class TypeWriter {
@@ -30,7 +21,8 @@ function typingAnimation() {
           } else {
             this.txt = fullTxt.substring(0, this.txt.length + 1);
           }
-          this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+          // Potential failure line 
+          this.txtElement.innerText = this.txt; 
           let typeSpeed = 50;
           if(this.isDeleting) {
             typeSpeed /= 2;
@@ -61,30 +53,12 @@ function typingAnimation() {
     
     typingAnimation()
 
-function date() {
-    const welcomeDay = document.getElementById("welcomeDay");
-    const date = new Date();
-    const day = date.getDay();
-    if(day === 0) {
-        welcomeDay.textContent = " sunday";
+    
+    const dateSelect = () => {
+      const welcomeDay = document.getElementById("welcomeDay");
+      const date = new Date();
+      const day = date.getDay();
+      const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      welcomeDay.textContent = days[day];
     }
-    if(day === 1) {
-        welcomeDay.textContent = " monday";
-    }
-    if(day === 2) {
-        welcomeDay.textContent = " tuesday";
-    }
-    if(day === 3) {
-        welcomeDay.textContent = " wednesday";
-    }
-    if(day === 4) {
-        welcomeDay.textContent = " thursday";
-    }
-    if(day === 5) {
-        welcomeDay.textContent = " friday";
-    }
-    if(day === 6) {
-      welcomeDay.textContent = " saturday";
-    }
-}
-date();
+    dateSelect();
