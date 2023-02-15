@@ -17,9 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
             opacity: 0,
             y: 40,
         }) 
-        setTimeout(() => {
-            window.location.replace("https://willjonesdev.co.uk/")
-        }, 3000);
+        // setTimeout(() => {
+        //     window.location.replace("https://willjonesdev.co.uk/")
+        // }, 3000);
     }
     successAnimation();
 })
