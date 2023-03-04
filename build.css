@@ -54,7 +54,7 @@ html {
     justify-content: center;
 }
 
-#blob {
+/* #blob {
   background-color: white;
   height: 80vmax;
   aspect-ratio: 1;
@@ -64,15 +64,15 @@ html {
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  /* background: linear-gradient(to right, #2563eb, #3b82f6); */
+  background: linear-gradient(to right, #2563eb, #3b82f6); 
   background: linear-gradient(to right, #ef476f, #3b82f6, #06d6a0);
   animation: rotate 20s infinite;
   opacity: 0.2;
   filter: blur(800px);
-}
+} */
 
 
-@keyframes rotate {
+/* @keyframes rotate {
   from {
     rotate: 0deg;
   }
@@ -84,7 +84,7 @@ html {
   to {
     rotate: 360deg;
   }
-}
+}  */
 
 @media screen and (max-width: 1024px) {
     /* #blob {

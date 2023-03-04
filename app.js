@@ -62,17 +62,17 @@ function dateSelect() {
 }
 dateSelect();
 
-function handleMouseMove(event) {
-  const blob = document.querySelector('#blob');
-  const { pageX, pageY } = event;
-  blob.getBoundingClientRect();
-  const adjustedX = pageX
-  const adjustedY = pageY
+// function handleMouseMove(event) {
+//   const blob = document.querySelector('#blob');
+//   const { pageX, pageY } = event;
+//   blob.getBoundingClientRect();
+//   const adjustedX = pageX
+//   const adjustedY = pageY
   
-  blob.animate({
-    left: `${adjustedX}px`,
-    top: `${adjustedY}px`
-  }, { duration: 3000, fill: "forwards" });
-}
+//   blob.animate({
+//     left: `${adjustedX}px`,
+//     top: `${adjustedY}px`
+//   }, { duration: 3000, fill: "forwards" });
+// }
 
-document.addEventListener('mousemove', handleMouseMove);
+// document.addEventListener('mousemove', handleMouseMove);
