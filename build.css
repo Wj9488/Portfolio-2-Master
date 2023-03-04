@@ -54,7 +54,42 @@ html {
     justify-content: center;
 }
 
+#blob {
+  background-color: white;
+  height: 80vmax;
+  aspect-ratio: 1;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  /* background: linear-gradient(to right, #2563eb, #3b82f6); */
+  background: linear-gradient(to right, #ef476f, #3b82f6, #06d6a0);
+  animation: rotate 20s infinite;
+  opacity: 0.2;
+  filter: blur(800px);
+}
+
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+    /* #blob {
+        display: none;
+    }  */
     .header__background {
         background-size: cover;
     }

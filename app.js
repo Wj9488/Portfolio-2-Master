@@ -21,7 +21,6 @@ function typingAnimation() {
           } else {
             this.txt = fullTxt.substring(0, this.txt.length + 1);
           }
-          // Potential failure line 
           this.txtElement.innerText = this.txt; 
           let typeSpeed = 50;
           if(this.isDeleting) {
@@ -51,14 +50,29 @@ function typingAnimation() {
     
     }
     
-    typingAnimation()
+typingAnimation()
 
     
-    const dateSelect = () => {
-      const welcomeDay = document.getElementById("welcomeDay");
-      const date = new Date();
-      const day = date.getDay();
-      const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-      welcomeDay.textContent = days[day];
-    }
-    dateSelect();
+function dateSelect() {
+  const welcomeDay = document.getElementById("welcomeDay");
+  const date = new Date();
+  const day = date.getDay();
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  welcomeDay.textContent = days[day];
+}
+dateSelect();
+
+function handleMouseMove(event) {
+  const blob = document.querySelector('#blob');
+  const { pageX, pageY } = event;
+  blob.getBoundingClientRect();
+  const adjustedX = pageX
+  const adjustedY = pageY
+  
+  blob.animate({
+    left: `${adjustedX}px`,
+    top: `${adjustedY}px`
+  }, { duration: 3000, fill: "forwards" });
+}
+
+document.addEventListener('mousemove', handleMouseMove);
