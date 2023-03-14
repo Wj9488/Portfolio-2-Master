@@ -1,4 +1,65 @@
+function customCursor() {
+  const bigBall = document.querySelector('.cursor__ball--big');
+  const smallBall = document.querySelector('.cursor__ball--small');
+  const hoverables = document.querySelectorAll('.hoverable');
+  
+  document.body.addEventListener('mousemove', onMouseMove);
+  for (let i = 0; i < hoverables.length; i++) {
+    hoverables[i].addEventListener('mouseenter', onMouseHover);
+    hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+  }
+  
+  function onMouseMove(e) {
+    gsap.to(bigBall, .4, {
+      x: e.pageX - 15,
+      y: e.pageY - 15
+    })
+    gsap.to(smallBall, .1, {
+      x: e.pageX - 5,
+      y: e.pageY - 7
+    })
+  }
+  
+  function onMouseHover() {
+    gsap.to(bigBall, .3, {
+      scale: 4
+    })
+  }
+  function onMouseHoverOut() {
+    gsap.to(bigBall, .3, {
+      scale: 1
+    })
+  }
+  }
+  customCursor();
 
+  function randomBackground() {
+    const colors = [
+      "#edede9",
+      "#f8f9fa",
+      "#f4f1de",
+      "#fffcf2",
+    ];
+    const documentBody = document.querySelector('body');
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    documentBody.style.backgroundColor = randomColor;
+
+    const svg = document.getElementById('svg__inherit_bg');
+    const menuToggleSvg = document.getElementById("svg__menu_toggle")
+
+    const bgColor = getComputedStyle(documentBody).backgroundColor;
+    svg.style.fill = bgColor;
+    svg.style.stroke = bgColor;
+    menuToggleSvg.style.fill = bgColor;
+}
+
+const randomiseSwitch = document.getElementById("colourSwitchToggle")
+randomiseSwitch.addEventListener("click", () => {
+  randomBackground();
+})
+
+randomBackground()
 
 function typingAnimation() {
     
@@ -62,17 +123,21 @@ function dateSelect() {
 }
 dateSelect();
 
-// function handleMouseMove(event) {
-//   const blob = document.querySelector('#blob');
-//   const { pageX, pageY } = event;
-//   blob.getBoundingClientRect();
-//   const adjustedX = pageX
-//   const adjustedY = pageY
-  
-//   blob.animate({
-//     left: `${adjustedX}px`,
-//     top: `${adjustedY}px`
-//   }, { duration: 3000, fill: "forwards" });
-// }
+function hoverCta() {
+  const ctaIdentifier = document.querySelector(".h__link_opacity_setter")
 
-// document.addEventListener('mousemove', handleMouseMove);
+  ctaIdentifier.addEventListener("mouseenter", () => {
+    gsap.to("#anim__cta_circle", {
+      duration: 0.5, 
+      opacity: 0,
+    })
+  })
+
+  ctaIdentifier.addEventListener("mouseleave", () =>  {
+    gsap.to("#anim__cta_circle", {
+      duration: 0.5, 
+      opacity: 1,
+    })
+  })
+}
+hoverCta();

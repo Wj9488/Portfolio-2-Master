@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="./build.css" />
     <title>Will Jones | Personal Portfolio</title>
   </head>
-  <body class="overflow-x-hidden bg-neutral-50 dark:bg-neutral-800">
-
-    <!-- <div id="blob"></div> -->
+  <body class="overflow-x-hidden bg-neutral-50">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKQ48KE9P"></script>
     <script>
@@ -26,91 +24,210 @@
       gtag('config', 'G-PXKQ48KE9P');
     </script>
 
-    <div id="personalPortfolio__appWrap_v1">
+    <div id="blob"></div>
+    <div id="other__nav_toggle" class="hoverable">
+      <svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.8984 1.77973C1.38555 5.33248 -2.3249 9.09225 1.31902 20.4928C6.73855 32.9135 11.8996 35.8776 25.4601 32.9683C37.3424 30.3009 37.1934 24.9696 36.9281 15.4819L36.9271 15.4433C37.0623 -1.8152 29.8476 -1.54363 14.8984 1.77973Z" fill="#070707"/>
+          <rect x="8" y="12" width="22" height="2" rx="1" fill="white"/>
+          <rect x="8" y="19" width="22" height="2" rx="1" fill="white"/>
+      </svg>  
+  </div>
 
-      <nav
-        id="nav__gsap_target" class="border-x border-b border-neutral-900 dark:border-neutral-300 rounded-b-2xl bg-white dark:bg-neutral-800 nav__height flex justify-around items-center lg:w-12/12 mr-auto ml-auto"
-      >
-        <div class="app__logo text-2xl dark:text-white" aria-label="Site logo">W/J</div>
-        <div>
-          <ul
-            class="flex items-center justify-around gap-8 lg:gap-5 font-medium"
-          >
-            <li><a href="#my-work" class="hover:text-blue-600 text-m dark:text-white">work</a></li>
-            <li><a href="#my-skills" class="hover:text-blue-600 text-m dark:text-white">skills</a></li>
-            <li><a href="#download-my-cv" class="hover:text-blue-600 text-m dark:text-white">cv</a></li>
-            <li><a href="#contact-me" class="hover:text-blue-600 text-m dark:text-white">contact</a></li>
-          </ul>
+    <div id="personalPortfolio__appWrap_v2">
+
+      <!-- Custom Cursor -->
+      <div class="cursor desktop__view_only">
+        <div class="cursor__ball cursor__ball--big desktop__view_only">
+          <svg height="30" width="30">
+            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+          </svg>
         </div>
-      </nav>
+        
+        <div class="cursor__ball cursor__ball--small desktop__view_only">
+          <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+          </svg>
+        </div>
+      </div><!-- End custom cursor -->
+
+      <!-- Hidden nav -->
+      <div class="hidden__nav_container">
+        <div class="flex nav__height justify-between items-center ml-auto mr-auto w-10/12">
+            <p class="font-medium text-lg text-white desktop__view_only">Menu</p>
+        
+            <div class="flex gap-2">
+                <p class="font-bold text-xl text-white">Will Jones</p>
+                <div>
+                    <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2744 1.36097C1.04852 4.07778 -1.75939 6.9529 0.998174 15.671C5.09944 25.1691 9.00514 27.4358 19.2671 25.211C28.2591 23.1712 28.1463 19.0944 27.9456 11.8391L27.9448 11.8096C28.0471 -1.38809 22.5874 -1.18042 11.2744 1.36097Z" fill="#070707"/>
+                        <path d="M12.6372 6.73283C7.52426 8.19573 6.12031 9.74387 7.49909 14.4382C9.54972 19.5526 11.5026 20.7731 16.6335 19.5752C21.1295 18.4768 21.0732 16.2816 20.9728 12.3749L20.9724 12.359C21.0236 5.25257 18.2937 5.36439 12.6372 6.73283Z" fill="#FAEDCD" stroke="white"/>
+                        <path d="M13.0266 9.4711C9.37447 10.4115 8.37165 11.4068 9.35649 14.4246C10.8212 17.7124 12.2161 18.497 15.8811 17.7269C19.0925 17.0208 19.0523 15.6096 18.9806 13.0981L18.9803 13.0879C19.0168 8.51951 17.0669 8.59139 13.0266 9.4711Z" fill="black"/>
+                        <path d="M11.2744 1.36097C1.04852 4.07778 -1.75939 6.9529 0.998174 15.671C5.09944 25.1691 9.00514 27.4358 19.2671 25.211C28.2591 23.1712 28.1463 19.0944 27.9456 11.8391L27.9448 11.8096C28.0471 -1.38809 22.5874 -1.18042 11.2744 1.36097Z" fill="white"/>
+                        <path d="M12.6372 6.78517C7.52426 8.35257 6.12031 10.0113 7.49909 15.041C9.54972 20.5206 11.5026 21.8283 16.6335 20.5448C21.1295 19.368 21.0732 17.016 20.9728 12.8302L20.9724 12.8132C21.0236 5.19918 18.2937 5.31899 12.6372 6.78517Z" fill="#070707" stroke="#070707"/>
+                        <path d="M13.0266 9.4711C9.37447 10.4115 8.37165 11.4068 9.35649 14.4246C10.8212 17.7124 12.2161 18.497 15.8811 17.7269C19.0925 17.0208 19.0523 15.6096 18.9806 13.0981L18.9803 13.0879C19.0168 8.51951 17.0669 8.59139 13.0266 9.4711Z" fill="white"/>
+                    </svg>   
+                </div>
+            </div>
+        
+            <div class="theme__bg border__radius_helper p-2 flex items-center gap-2 hoverable" id="navClose">
+                <div>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.41418" width="20" height="2" rx="1" transform="rotate(45 1.41418 0)" fill="white"/>
+                        <rect y="14.1421" width="20" height="2" rx="1" transform="rotate(-45 0 14.1421)" fill="white"/>
+                    </svg>                                    
+                </div>
+            </div>
+        </div>
+
+        <section class="nav__section_helper w-10/12 ml-auto mr-auto opacity-0" id="anim__navWrapper">
+            <p class="text-white ">What are you looking for?</p>
+            <div class="nav__divider_line mt-4 lg:mt-4" id="anim__divider1"></div>
+            <ul class="flex-row lg:flex lg:gap-5 nav__width_setter lg:flex-wrap items-center justify-start mt-4">
+
+                <a href="#" id="anim__navItem" class="nav__z_index">
+                <div class="flex items-center justify-between gap-5 rounded-2xl p-4 bg-white hoverable">
+                    <li class="text-3xl hover__link font-light">My skills</li>
+                    <div>
+                        <svg width="51" height="16" viewBox="0 0 51 16" xmlns="http://www.w3.org/2000/svg">
+                            <path  fill="black" d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"/>
+                        </svg>    
+                    </div>
+                </div>
+                </a>
+
+                <a href="#" id="anim__navItem" class="nav__z_index">
+                    <div class="mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl p-4 bg-white hoverable">
+                        <li class="text-3xl hover__link font-light">My work</li>
+                        <div>
+                            <svg width="51" height="16" viewBox="0 0 51 16" xmlns="http://www.w3.org/2000/svg">
+                                <path  fill="black" d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"/>
+                            </svg>    
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" id="anim__navItem" class="nav__z_index">
+                    <div class="mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl p-4 bg-white hoverable">
+                        <li class="text-3xl hover__link font-light">About me</li>
+                        <div>
+                            <svg width="51" height="16" viewBox="0 0 51 16" xmlns="http://www.w3.org/2000/svg">
+                                <path  fill="black" d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"/>
+                            </svg>    
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" id="anim__navItem" class="nav__z_index">
+                    <div class="mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl p-4 bg-white hoverable">
+                        <li class="text-3xl hover__link font-light">My cv</li>
+                        <div>
+                            <svg width="51" height="16" viewBox="0 0 51 16" xmlns="http://www.w3.org/2000/svg">
+                                <path  fill="black" d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"/>
+                            </svg>    
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" id="anim__navItem" class="nav__z_index">
+                    <div class="mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl p-4 bg-white hoverable">
+                        <li class="text-3xl hover__link font-light">Contact</li>
+                        <div>
+                            <svg width="51" height="16" viewBox="0 0 51 16" xmlns="http://www.w3.org/2000/svg">
+                                <path  fill="black" d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"/>
+                            </svg>    
+                        </div>
+                    </div>
+                </a>
+
+            </ul>
+            <div class="nav__divider_line mt-4 lg:mt-4"></div>
+
+            <a href="#" class="text-white hoverable mt-4">LinkedIn</a>
+            <a href="#" class="text-white hoverable">Github</a>
+
+        </section>
+
+    </div> <!-- End Hidden Nav -->
+
+       <nav id="anim__main_nav" class="nav__height flex justify-between items-center ml-auto mr-auto w-10/12">
+
+            <p class="text-lg hoverable reject__font_weight" id="colourSwitchToggle">-ˋˏ [] ˎˊ</p>
+            <!-- ■━■━■━■ └ ┛┏ ┐ -->
+
+            <div class="flex gap-2">
+                <p class="font-bold text-xl">Will Jones</p>
+                <div>
+                    <svg width="28" height="26" viewBox="0 0 28 26" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2744 1.36097C1.04852 4.07778 -1.75939 6.9529 0.998174 15.671C5.09944 25.1691 9.00514 27.4358 19.2671 25.211C28.2591 23.1712 28.1463 19.0944 27.9456 11.8391L27.9448 11.8096C28.0471 -1.38809 22.5874 -1.18042 11.2744 1.36097Z" fill="#070707"/>
+                        <path d="M12.6372 6.73283C7.52426 8.19573 6.12031 9.74387 7.49909 14.4382C9.54972 19.5526 11.5026 20.7731 16.6335 19.5752C21.1295 18.4768 21.0732 16.2816 20.9728 12.3749L20.9724 12.359C21.0236 5.25257 18.2937 5.36439 12.6372 6.73283Z" fill="#fef3c7" stroke="white"/>
+                        <path d="M13.0266 9.4711C9.37447 10.4115 8.37165 11.4068 9.35649 14.4246C10.8212 17.7124 12.2161 18.497 15.8811 17.7269C19.0925 17.0208 19.0523 15.6096 18.9806 13.0981L18.9803 13.0879C19.0168 8.51951 17.0669 8.59139 13.0266 9.4711Z" fill="black"/>
+                        <path d="M11.2744 1.36097C1.04852 4.07778 -1.75939 6.9529 0.998174 15.671C5.09944 25.1691 9.00514 27.4358 19.2671 25.211C28.2591 23.1712 28.1463 19.0944 27.9456 11.8391L27.9448 11.8096C28.0471 -1.38809 22.5874 -1.18042 11.2744 1.36097Z" fill="#070707"/>
+                        <path id="svg__inherit_bg" d="M12.6372 6.73283C7.52426 8.19573 6.12031 9.74387 7.49909 14.4382C9.54972 19.5526 11.5026 20.7731 16.6335 19.5752C21.1295 18.4768 21.0732 16.2816 20.9728 12.3749L20.9724 12.359C21.0236 5.25257 18.2937 5.36439 12.6372 6.73283Z"/>
+                        <path d="M13.0266 9.4711C9.37447 10.4115 8.37165 11.4068 9.35649 14.4246C10.8212 17.7124 12.2161 18.497 15.8811 17.7269C19.0925 17.0208 19.0523 15.6096 18.9806 13.0981L18.9803 13.0879C19.0168 8.51951 17.0669 8.59139 13.0266 9.4711Z" fill="black"/>
+                    </svg>  
+                </div>
+            </div>
+
+            <div class="theme__bg border__radius_helper p-2 flex items-center gap-2 hoverable" id="navToggle">
+                <div>
+                    <svg width="29" height="8" viewBox="0 0 29 8" id="svg__menu_toggle" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="6" width="29" height="2" rx="1"/>
+                        <rect width="29" height="2" rx="1"/>
+                        <rect y="6" width="29" height="2" rx="1"/>
+                        <rect width="29" height="2" rx="1"/>
+                    </svg> 
+                </div>
+            </div>
+        </nav>
+
+        <div class="border__horizontal theme__bg desktop__view_only" id="anim__border_horizontal"></div> 
 
       <div class="md:w-7/12 mr-auto ml-auto" id="primary__content_container">
-        <header
-          class="section__height flex-row justify-center items-center mt-10"
-        >
-        <svg id="header__top_svg" width="256" height="83" viewBox="0 0 256 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M70.25 45.3971L7.99999 81.3372C5 83.0692 1.25 80.9042 1.25 77.4401V5.55994C1.25 2.09584 5 -0.0692186 8 1.66283L70.25 37.6029C73.25 39.3349 73.25 43.6651 70.25 45.3971Z" />
-            <path class="stroke-blue-600" d="M131.25 45.3971L69 81.3372C66 83.0692 62.25 80.9042 62.25 77.4401V5.55994C62.25 2.09584 66 -0.0692186 69 1.66283L131.25 37.6029C134.25 39.3349 134.25 43.6651 131.25 45.3971Z" />
-            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M192.25 45.3971L130 81.3372C127 83.0692 123.25 80.9042 123.25 77.4401V5.55994C123.25 2.09584 127 -0.0692186 130 1.66283L192.25 37.6029C195.25 39.3349 195.25 43.6651 192.25 45.3971Z" />
-            <path class="stroke-blue-600" d="M253.25 45.3971L191 81.3372C188 83.0692 184.25 80.9042 184.25 77.4401V5.55994C184.25 2.09584 188 -0.0692186 191 1.66283L253.25 37.6029C256.25 39.3349 256.25 43.6651 253.25 45.3971Z" />
-        </svg>
-            
-          <div class="mt-2 mb-2 w-10/12 mr-auto ml-auto">
-            <h1 class="site__header_control font-bold lg:text-6xl text-5xl dark:text-white">
-              <span id="header__span_gsap" class="text-blue-600"
-                >CREATING ENGAGING WEB EXPERIENCES
-              </span>
-              <span class="dark:text-blue-white" id="header__spanTwo_gsap">FOR YOUR PROJECT</span> 
-            </h1>
+
+        <header class="section__height_flex ml-auto mr-auto w-10/12 md:p-4">
+          <div class="flex-row lg:flex lg:justify-between items-center">
+              <h1 id="anim__headerText" class="text-4xl lg:text-5xl lg:w-10/12">
+                  I'm Will, a web developer who's determined to help you turn your next project
+                  into a stunning digital experience.
+              </h1>
+              <div class="mt-4 desktop__view_only">
+                  <svg id="anim__header_arrow" width="16" height="136" viewBox="0 0 16 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.29819 135.712C7.69162 136.1 8.32476 136.095 8.71236 135.702L15.0287 129.291C15.4163 128.897 15.4115 128.264 15.0181 127.876C14.6247 127.489 13.9915 127.493 13.6039 127.887L7.98945 133.586L2.29054 127.971C1.89711 127.584 1.26396 127.588 0.876361 127.982C0.488762 128.375 0.493487 129.008 0.886915 129.396L7.29819 135.712ZM6.00003 1.00746L7.00003 135.007L8.99997 134.993L7.99997 0.992538L6.00003 1.00746Z" fill="black"/>
+                  </svg>  
+              </div>
           </div>
-
-        <svg class="svg__position" width="195" height="83" viewBox="0 0 195 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M2.75 37.6029L65 1.66283C68 -0.0692215 71.75 2.09584 71.75 5.55994V77.4401C71.75 80.9042 68 83.0692 65 81.3372L2.75 45.3971C-0.250003 43.6651 -0.250001 39.3349 2.75 37.6029Z" />
-            <path class="stroke-blue-600" d="M63.75 37.6029L126 1.66283C129 -0.0692215 132.75 2.09584 132.75 5.55994V77.4401C132.75 80.9042 129 83.0692 126 81.3372L63.75 45.3971C60.75 43.6651 60.75 39.3349 63.75 37.6029Z" />
-            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M124.75 37.6029L187 1.66283C190 -0.0692215 193.75 2.09584 193.75 5.55994V77.4401C193.75 80.9042 190 83.0692 187 81.3372L124.75 45.3971C121.75 43.6651 121.75 39.3349 124.75 37.6029Z" />
-        </svg>
-            
-
-          <div
-            class="flex items-center justify-center mt-6 text-4xl text-blue-600" id="header__arrow_gsap"
-          >
-
-            <svg id="header__arrow_svg" class="fill-neutral-900 dark:fill-neutral-50" width="16" height="49" viewBox="0 0 16 49" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.54289 47.7111C7.93342 48.1016 8.56658 48.1016 8.95711 47.7111L15.3211 41.3472C15.7116 40.9566 15.7116 40.3235 15.3211 39.9329C14.9305 39.5424 14.2974 39.5424 13.9069 39.9329L8.25 45.5898L2.59315 39.9329C2.20262 39.5424 1.56946 39.5424 1.17893 39.9329C0.788408 40.3235 0.788408 40.9566 1.17893 41.3472L7.54289 47.7111ZM7.25 0.998657L7.25 47.004H9.25L9.25 0.998657L7.25 0.998657Z"/>
-            </svg>
-            
-          </div>
-
-          <p id="header__p_gsap" class="w-10/12 mr-auto ml-auto mt-6 text-lg dark:text-white">
-            I'm Will Jones, a website designer who's determined to help you level up
-            your website.
-          </p>
-
-        <svg id="header__bottom_svg" class="mt-6" width="256" height="83" viewBox="0 0 256 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="stroke-blue-600" d="M131.25 45.3971L69 81.3372C66 83.0692 62.25 80.9042 62.25 77.4401V5.55994C62.25 2.09584 66 -0.0692186 69 1.66283L131.25 37.6029C134.25 39.3349 134.25 43.6651 131.25 45.3971Z"/>
-            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M192.25 45.3971L130 81.3372C127 83.0692 123.25 80.9042 123.25 77.4401V5.55994C123.25 2.09584 127 -0.0692186 130 1.66283L192.25 37.6029C195.25 39.3349 195.25 43.6651 192.25 45.3971Z"/>
-            <path class="stroke-blue-600" d="M253.25 45.3971L191 81.3372C188 83.0692 184.25 80.9042 184.25 77.4401V5.55994C184.25 2.09584 188 -0.0692186 191 1.66283L253.25 37.6029C256.25 39.3349 256.25 43.6651 253.25 45.3971Z"/>
-        </svg>
+          <a href="#contact-me" class="hoverable mt-4" id="anim__cta">
+              <div id="anim__header_cta" class="gsap__headerScrollTrigger mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl hover__link h__link_opacity_setter">
+                  <p class="text-2xl">Let's talk</p>
+                  <div>
+                      <svg width="50" height="50" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle id="anim__cta_circle" cx="42.5" cy="42.5" r="42" stroke="#070707"/>
+                          <path class="path" fill="#070707" d="M41.3165 54.7307C41.7074 55.1209 42.3405 55.1203 42.7307 54.7294L49.0888 48.3596C49.479 47.9687 49.4784 47.3356 49.0875 46.9454C48.6966 46.5552 48.0635 46.5558 47.6733 46.9467L42.0217 52.6087L36.3596 46.9571C35.9687 46.5669 35.3356 46.5675 34.9454 46.9584C34.5552 47.3493 34.5558 47.9824 34.9467 48.3726L41.3165 54.7307ZM41 29.0009L41.0229 54.0239L43.0229 54.022L43 28.9991L41 29.0009Z"/>
+                      </svg>    
+                  </div>
+              </div>
+          </a>
+        </header>
         
         <div id="content__gsap_fade"><!-- <- GSAP CONTENT WRAP START DIV -->
 
-        <section class="border border-neutral-900 dark:border-neutral-300 rounded-xl mt-6 p-4">
-          <p class="text-neutral-500 text-xs">WHAT I DO</p>
-          <h2 class="text-2xl text-blue-600 font-bold mt-2">
-            FROM CONCEPT TO CODE
+        <section class="border border-neutral-900  rounded-xl mt-6 p-4">
+          <p class="text-neutral-500 text-xs">01</p>
+          <h2 class="text-2xl text-neutral-900 mt-2">
+           From concept to code 
           </h2>
-          <p class="mt-2 text-lg dark:text-white">
+          <p class="mt-2 text-lg ">
             I'll help you make your dream website a reality using modern
             technologies to ensure it's both beautiful and performant, complete with modern additions such as animations and automatic light and dark modes.
           </p>
         </section>
 
         <section class="mt-10 lg:mt-20 p-4">
-          <p class="text-neutral-500 text-xs">ABOUT</p>
-          <h3 class="text-2xl text-blue-600 font-bold mt-2">
-            ABOUT ME
+          <p class="text-neutral-500 text-xs">02</p>
+          <h3 class="text-2xl text-neutral-900 mt-2">
+            About me
           </h3>
-          <p class="mt-2 text-lg dark:text-white">
+          <p class="mt-2 text-lg ">
             I'm a student at the University of Exeter studying Business and Management. However, about 8 months ago, I also decided that I wanted
             to learn how to code. Initially starting with Python, my journey then inevitably led me to learning how to build websites.
             <br>
@@ -128,11 +245,11 @@
         </section>
 
         <section class="mt-10 lg:mt-20 p-4">
-          <p class="text-neutral-500 text-xs" id="my-work">SHOWCASE</p>
-          <h4 class="text-2xl text-blue-600 font-bold mt-2">
-            UI DESIGN
+          <p class="text-neutral-500 text-xs" id="my-work">03</p>
+          <h4 class="text-2xl text-neutral-900 mt-2">
+            UI design
           </h4>
-          <p class="mt-2 text-lg dark:text-white">
+          <p class="mt-2 text-lg ">
             Some wireframes designed for fictional websites.
           </p>
           <!-- flex justify-around items-center flex-row lg:flex justify-around items-center -->
@@ -145,19 +262,18 @@
         </section>
 
         <section class="mt-10 lg:mt-20 p-4">
-          <h5 class="text-2xl text-blue-600 font-bold">WEBSITES</h5>
+          <h5 class="text-2xl text-neutral-900">Websites</h5>
 
-          <p class="mt-6 text-xl font-semibold dark:text-white">HRM</p>
+          <p class="mt-6 text-xl">HRM</p>
           <a href="https://hrmblog.netlify.app/" target="_blank" role="Link to the live site">
             <button
-              class="border border-neutral-900 dark:border-neutral-300 rounded-xl p-2 mt-3 flex justify-center items-center gap-2 dark:text-white"
+              class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
             >
-              <div>See live site</div>
-              <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
+              <div>See live site 	&rarr;</div>
             </button>
           </a>
-          <p class="text-neutral-500 text-xs mt-3">ABOUT THE PROJECT</p>
-          <p class="mt-2 text-lg dark:text-white">
+          <p class="text-neutral-500 text-xs mt-3">About the project</p>
+          <p class="mt-2 text-lg ">
             A JAM stack blog website created for a University assignment 
             complete with a Sanity "headless" CMS backend and Next.js front end 
             using incremental static regeneration to enhance speed of page loads and updates. 
@@ -167,79 +283,78 @@
             team members to update content easily.  
           </p>
           <div class="flex justify-start items-center flex-wrap mt-2 gap-5"  role="Website features list">
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               Responsive Design
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
                 Headless CMS 
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               Next.js ISR
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               JAM stack
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               Automatic light and dark Mode
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               Full stack application
             </p>
           </div>
 
-          <p class="mt-6 text-xl font-semibold dark:text-white">Graphicpro</p>
+          <p class="mt-6 text-xl">Graphicpro</p>
           <a href="https://graphicpro.netlify.app/" target="_blank" role="Link to the live site">
             <button
-              class="border border-neutral-900 dark:border-neutral-300 rounded-xl p-2 mt-3 flex justify-center items-center gap-2 dark:text-white"
+              class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
             >
-              <div>See live site</div>
-              <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
+              <div>See live site &rarr;</div>
             </button>
           </a>
-          <p class="text-neutral-500 text-xs mt-3">ABOUT THE PROJECT</p>
-          <p class="mt-2 text-lg dark:text-white">
+          <p class="text-neutral-500 text-xs mt-3">About the project</p>
+          <p class="mt-2 text-lg ">
             Being inspired by the recent advancements in AI art generating
             technology, I set out to create a landing page for a fictional
             company that sells AI art services.
           </p>
           <div class="flex justify-start items-center flex-wrap mt-2 gap-5"  role="Website features list">
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               Responsive Design
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
                 Logo Design
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               AI generated images
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               Animations & Scroll Triggers
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               Automatic light and dark Mode
             </p>
           </div>
 
-          <p class="mt-6 text-xl font-semibold dark:text-white">Personal Website</p>
-          <button class="border border-neutral-900 dark:border-neutral-300 rounded-xl p-2 mt-3 dark:text-white" role="Button disabled">
+          <p class="mt-6 text-xl">Personal Website</p>
+          <button class="border border-neutral-900  rounded-xl p-2 mt-3 " role="Button disabled">
             <div>This website</div>
           </button>
-          <p class="text-neutral-500 text-xs mt-3">ABOUT THE PROJECT</p>
-          <p class="mt-2 text-lg dark:text-white">
+          <p class="text-neutral-500 text-xs mt-3">About the project</p>
+          <p class="mt-2 text-lg ">
             Having spent over 8 months learning website development & the
             theory behind designing professional websites, I thought it necessary
             to take the time to re-design my previously less inspiring personal
             portfolio to put some of my skills into practice.
           </p>
           <div class="flex justify-start items-center flex-wrap mt-2 gap-5" role="Website features list">
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
               Responsive Design
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
-              Automatic light and dark mode
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
+              Random background
             </p>
-            <p class="bg-neutral-300 p-2 rounded-2xl text-sm dark:text-white dark:bg-neutral-700">
-                SVG Animations
+            <p class="opacity__background p-2 rounded-2xl text-sm  ">
+              Animations & Scroll Triggers
             </p>
           </div>
         </section>
@@ -247,110 +362,84 @@
         <section
           class="mt-10 lg:mt-20 flex-row lg:flex justify-between items-start gap-2" id="my-skills"
         >
-          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 dark:border-neutral-300 p-4">
-            <p class="text-neutral-500 text-xs">LANGUAGES</p>
-            <h5 class="text-2xl text-blue-600 font-bold mt-2">
-              LANGUAGES I USE
+          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900  p-4">
+            <p class="text-neutral-500 text-xs">a</p>
+            <h5 class="text-2xl text-neutral-900 mt-2">
+              Languages I use
             </h5>
-            <p class="text-m mt-2 dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m mt-2 ">
+              &#x2713
               HTML
             </p>
-            <p class="text-m dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m ">
+              &#x2713
               CSS
             </p>
-            <p class="text-m dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m ">
+              &#x2713
               Javascript
             </p>
-            <p class="text-m dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m ">
+              &#x2713
               Python
             </p>
-            <p class="text-m dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m ">
+              &#x2713
               Node.js
             </p>
           </div>
-          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 dark:border-neutral-300 p-4">
-            <p class="text-neutral-500 text-xs">FRAMEWORKS</p>
-            <h5 class="text-2xl text-blue-600 font-bold mt-2">
-              FRAMEWORKS I USE
+          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900  p-4">
+            <p class="text-neutral-500 text-xs">b</p>
+            <h5 class="text-2xl text-neutral-900 mt-2">
+              Frameworks I use
             </h5>
-            <p class="text-m mt-2 dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m mt-2 ">
+              &#x2713
               Sveltekit
             </p>
-            <p class="text-m dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m ">
+              &#x2713
               React
             </p>
-            <p class="text-m dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m ">
+              &#x2713
               GSAP (animation)
             </p>
-            <p class="text-m dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m ">
+              &#x2713
               SCSS (styling)
             </p>
-            <p class="text-m dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m ">
+              &#x2713
               Tailwind (styling)
             </p>
           </div>
-          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 dark:border-neutral-300 p-4">
-            <p class="text-neutral-500 text-xs">LEARNING</p>
-            <h5 class="text-2xl text-blue-600 font-bold mt-2">
-              CURRENTLY LEARNING
+          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900  p-4">
+            <p class="text-neutral-500 text-xs">c</p>
+            <h5 class="text-2xl text-neutral-900 mt-2">
+              Currently learning
             </h5>
-            <p class="text-m mt-2 dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m mt-2 ">
+              &#x2713
               Python webscraping
             </p>
-            <p class="text-m dark:text-white">
-              <span class="mr-2 dark:text-white"
-                ><ion-icon name="checkmark-outline"></ion-icon
-              ></span>
+            <p class="text-m ">
+              &#x2713
               Algorithms
             </p>
-            <p class="text-m dark:text-white">
-                <span class="mr-2 dark:text-white"
-                  ><ion-icon name="checkmark-outline"></ion-icon
-                ></span>
+            <p class="text-m ">
+              &#x2713
                 Business management
               </p>
           </div>
         </section>
 
         <section class="mt-10 lg:mt-20 p-4">
-          <p class="text-neutral-500 text-xs" id="download-my-cv">CV</p>
-          <h2 class="text-2xl text-blue-600 font-bold mt-2">MY CV</h2>
+          <p class="text-neutral-500 text-xs" id="download-my-cv">04</p>
+          <h2 class="text-2xl text-neutral-900 mt-2">My cv</h2>
           <a href="./cv.html">
             <button
-              class="border border-neutral-900 dark:border-neutral-300 rounded-xl p-2 mt-3 flex justify-center items-center gap-2 dark:text-white"
+              class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
             >
               <div>View here</div>
               <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
@@ -359,18 +448,17 @@
         </section>
 
         <section class="mt-10 lg:mt-20 p-4">
-          <p class="text-neutral-500 text-xs" id="contact-me">CONTACT</p>
-          <h6 class="text-2xl text-blue-600 font-bold mt-2">CONTACT ME</h6>
+          <p class="text-neutral-500 text-xs" id="contact-me">05</p>
+          <h6 class="text-2xl text-neutral-900 mt-2">Contact me</h6>
           <a href="https://www.linkedin.com/in/william-jones-450715251/" target="_blank">
             <button
-              class="border border-neutral-900 dark:border-neutral-300 rounded-xl p-2 mt-3 flex justify-center items-center gap-2 dark:text-white"
+              class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
             >
-              <div>Message me on LinkedIn</div>
-              <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
+              <div>Message me on LinkedIn &rarr;</div>
             </button>
           </a>
 
-          <p class="text-blue-600 mt-3 font-bold">OR</p>
+          <p class="text-neutral-900 mt-3 font-bold">or</p>
 
           <form
             action="https://formsubmit.co/8a353b9f93929ceb9569fa7c335256ec"
@@ -389,24 +477,24 @@
               value="Personal Portfolio Message"
             />
             <div class="mb-0 mt-2">
-              <p class="dark:text-white">Your name <sup>*</sup></p>
+              <p class="">Your name <sup>*</sup></p>
               <input
                 type="text"
                 id="form__nameInput"
                 name="name"
-                class="mt-2 bg-neutral-100 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="mt-2 bg-neutral-100 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 required
                 aria-required="true"
               />
             </div>
-            <p class="mt-2 dark:text-white">Your email <sup>*</sup></p>
+            <p class="mt-2 ">Your email <sup>*</sup></p>
             <div class="relative mt-2">
               <div
                 class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
               >
                 <svg
                   aria-hidden="true"
-                  class="w-5 h-5 text-neutral-500 dark:text-neutral-400"
+                  class="w-5 h-5 text-neutral-500 "
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -426,30 +514,24 @@
                 id="email-address-icon"
                 required
                 aria-required="true"
-                class="bg-neutral-100 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-neutral-100 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
               />
             </div>
-            <p class="mt-2 dark:text-white">Your message <sup>*</sup></p>
+            <p class="mt-2 ">Your message <sup>*</sup></p>
             <textarea
               id="message"
               name="message"
               required
               aria-required="true"
               rows="4"
-              class="mt-2 block p-2.5 w-full text-sm text-neutral-900 bg-neutral-100 rounded-lg border border-neutral-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="mt-2 block p-2.5 w-full text-sm text-neutral-900 bg-neutral-100 rounded-lg border border-neutral-300 focus:ring-blue-500 focus:border-blue-500"
             >
             </textarea>
-            <button type="submit" id="form__submitButton" class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <button type="submit" id="form__submitButton" class="hoverable mt-4 text-white bg-neutral-900 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
                 Send message
             </button>
           </form>
         </section>
-
-        <svg class="svg__position" width="195" height="83" viewBox="0 0 195 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M2.75 37.6029L65 1.66283C68 -0.0692215 71.75 2.09584 71.75 5.55994V77.4401C71.75 80.9042 68 83.0692 65 81.3372L2.75 45.3971C-0.250003 43.6651 -0.250001 39.3349 2.75 37.6029Z" />
-            <path class="stroke-blue-600" d="M63.75 37.6029L126 1.66283C129 -0.0692215 132.75 2.09584 132.75 5.55994V77.4401C132.75 80.9042 129 83.0692 126 81.3372L63.75 45.3971C60.75 43.6651 60.75 39.3349 63.75 37.6029Z" />
-            <path class="stroke-neutral-900 dark:stroke-neutral-50" d="M124.75 37.6029L187 1.66283C190 -0.0692215 193.75 2.09584 193.75 5.55994V77.4401C193.75 80.9042 190 83.0692 187 81.3372L124.75 45.3971C121.75 43.6651 121.75 39.3349 124.75 37.6029Z" />
-        </svg>
 
       </div>
 
@@ -457,12 +539,24 @@
     </div><!--  <- END GSAP WRAP DIV -->
 
       <footer
-        class="footer__height border-x border-t border-neutral-900 dark:border-neutral-300 rounded-t-2xl bg-white dark:bg-neutral-800 flex-row p-4 justify-around items-center mt-10 lg:mt-20 lg:w-12/12 mr-auto ml-auto"
+        class="footer__height border-x border-t border-neutral-900  rounded-t-2xl bg-white  flex-row p-4 justify-around items-center mt-10 lg:mt-20 lg:w-12/12 mr-auto ml-auto"
       >
         <div class="flex-row lg:flex lg:justify-between">
           <div>
-            <div class="app__logo text-2xl dark:text-white">W/J</div>
-            <p class="mt-2 text-m font-semibold dark:text-white">
+            <div class="app__logo flex gap-2" aria-label="Site logo">
+              <p class="font-bold text-xl">Will Jones</p>
+                    <div>
+                        <svg width="28" height="26" viewBox="0 0 28 26" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2744 1.36097C1.04852 4.07778 -1.75939 6.9529 0.998174 15.671C5.09944 25.1691 9.00514 27.4358 19.2671 25.211C28.2591 23.1712 28.1463 19.0944 27.9456 11.8391L27.9448 11.8096C28.0471 -1.38809 22.5874 -1.18042 11.2744 1.36097Z" fill="#070707"/>
+                            <path d="M12.6372 6.73283C7.52426 8.19573 6.12031 9.74387 7.49909 14.4382C9.54972 19.5526 11.5026 20.7731 16.6335 19.5752C21.1295 18.4768 21.0732 16.2816 20.9728 12.3749L20.9724 12.359C21.0236 5.25257 18.2937 5.36439 12.6372 6.73283Z" fill="#fef3c7" stroke="white"/>
+                            <path d="M13.0266 9.4711C9.37447 10.4115 8.37165 11.4068 9.35649 14.4246C10.8212 17.7124 12.2161 18.497 15.8811 17.7269C19.0925 17.0208 19.0523 15.6096 18.9806 13.0981L18.9803 13.0879C19.0168 8.51951 17.0669 8.59139 13.0266 9.4711Z" fill="black"/>
+                            <path d="M11.2744 1.36097C1.04852 4.07778 -1.75939 6.9529 0.998174 15.671C5.09944 25.1691 9.00514 27.4358 19.2671 25.211C28.2591 23.1712 28.1463 19.0944 27.9456 11.8391L27.9448 11.8096C28.0471 -1.38809 22.5874 -1.18042 11.2744 1.36097Z" fill="#070707"/>
+                            <path id="svg__inherit_bg" class="fallback__fill" d="M12.6372 6.73283C7.52426 8.19573 6.12031 9.74387 7.49909 14.4382C9.54972 19.5526 11.5026 20.7731 16.6335 19.5752C21.1295 18.4768 21.0732 16.2816 20.9728 12.3749L20.9724 12.359C21.0236 5.25257 18.2937 5.36439 12.6372 6.73283Z"/>
+                            <path d="M13.0266 9.4711C9.37447 10.4115 8.37165 11.4068 9.35649 14.4246C10.8212 17.7124 12.2161 18.497 15.8811 17.7269C19.0925 17.0208 19.0523 15.6096 18.9806 13.0981L18.9803 13.0879C19.0168 8.51951 17.0669 8.59139 13.0266 9.4711Z" fill="black"/>
+                        </svg>  
+                    </div>
+            </div>
+            <p class="mt-2 text-m">
               Improving one project at a time.
             </p>
           </div>
@@ -471,19 +565,19 @@
               class="flex items-center flex-wrap justify-start gap-5 mt-6 lg:gap-5 font-medium"
             >
               <li>
-                <a href="#" class="hover:text-blue-600 text-m dark:text-white">Back to top</a>
+                <a href="#" class=" text-m hoverable">Back to top</a>
               </li>
-              <li><a href="#my-work" class="hover:text-blue-600 text-m dark:text-white">work</a></li>
-            <li><a href="#my-skills" class="hover:text-blue-600 text-m dark:text-white">skills</a></li>
-              <li><a href="#download-my-cv" class="hover:text-blue-600 text-m dark:text-white">cv</a></li>
+              <li><a href="#my-work" class="hoverable text-m ">work</a></li>
+            <li><a href="#my-skills" class="hoverable text-m ">skills</a></li>
+              <li><a href="#download-my-cv" class="hoverable text-m ">cv</a></li>
               <li>
-                <a href="#contact-me" class="hover:text-blue-600 text-m dark:text-white">contact</a>
+                <a href="#contact-me" class="hoverable text-m">contact</a>
               </li>
             </ul>
           </div>
         </div>
         <div
-          class="footer__divider_line w-12/12 mt-6 mr-auto ml-auto bg-neutral-900 dark:bg-neutral-50"
+          class="footer__divider_line w-12/12 mt-6 mr-auto ml-auto bg-neutral-900 "
         ></div>
         <p class="text-neutral-500 mt-6 mb-6 text-xs lg:text-center">
           Copyright © Will Jones 2023
@@ -493,15 +587,8 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="./anim.js"></script>
     <script src="./app.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
