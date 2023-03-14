@@ -9,11 +9,6 @@ function gsapPageLoad() {
         duration: 1,
         width: "0%",
     })
-    gsap.from(".border__section", {
-        delay: 1.25, 
-        duration: 1, 
-        opacity: 0, 
-    })
     gsap.from("#anim__headerText", {
         delay: 1.5,
         duration: 1, 
@@ -21,18 +16,18 @@ function gsapPageLoad() {
         y: -10,
     })
     gsap.from("#anim__header_arrow", {
-        delay: 2,
+        delay: 1.75,
         duration: 1, 
         opacity: 0, 
         y: -20,
     })
     gsap.from("#anim__header_cta", {
-        delay: 2,
+        delay: 2.25,
         duration: 1, 
         opacity: 0, 
     })
     gsap.from("#anim__main_nav", {
-        delay: 2,
+        delay: 2.5,
         duration: 1, 
         opacity: 0, 
         y: -20, 
