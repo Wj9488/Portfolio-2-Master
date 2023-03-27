@@ -184,7 +184,7 @@
 
       <div class="md:w-7/12 mr-auto ml-auto" id="primary__content_container">
 
-        <header class="section__height_flex ml-auto mr-auto w-10/12 md:p-4">
+        <header class="section__height_flex ml-auto mr-auto w-10/12 md:p-4 font__poppins">
           <div class="flex-row lg:flex lg:justify-between items-center">
               <h1 id="anim__headerText" class="text-4xl lg:text-5xl lg:w-10/12">
                   I'm Will, a web developer who's determined to help you turn your next project
@@ -198,7 +198,7 @@
           </div>
           <a href="#contact-me" class="hoverable mt-4" id="anim__cta">
               <div id="anim__header_cta" class="gsap__headerScrollTrigger mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl hover__link h__link_opacity_setter">
-                  <p class="text-2xl">Let's talk</p>
+                  <p class="text-2xl font__poppins">Let's talk</p>
                   <div>
                       <svg width="50" height="50" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <circle id="anim__cta_circle" cx="42.5" cy="42.5" r="42" stroke="#070707"/>
@@ -212,8 +212,8 @@
         <div id="content__gsap_fade"><!-- <- GSAP CONTENT WRAP START DIV -->
 
         <section class="border border-neutral-900  rounded-xl mt-6 p-4">
-          <p class="text-neutral-500 text-xs">01</p>
-          <h2 class="text-2xl text-neutral-900 mt-2">
+          <p class="text-neutral-500 text-xs font__poppins">01</p>
+          <h2 class="text-2xl text-neutral-900 mt-2 font__poppins">
            From concept to code 
           </h2>
           <p class="mt-2 text-lg ">
@@ -222,31 +222,84 @@
           </p>
         </section>
 
-        <section class="mt-10 lg:mt-20 p-4" id="about-me">
-          <p class="text-neutral-500 text-xs">02</p>
-          <h3 class="text-2xl text-neutral-900 mt-2">
-            About me
-          </h3>
-          <p class="mt-2 text-lg ">
-            I'm a student at the University of Exeter studying Business and Management. However, about 8 months ago, I also decided that I wanted
-            to learn how to code. Initially starting with Python, my journey then inevitably led me to learning how to build websites.
-            <br>
-            <br>
-            Having always had a passion for design, I love being able to convert an idea into a working product that people can interact with.
-            <br>
-            <br>
-            Some of my other interests include, skiing, cryptocurrency trading, NFT flipping and going to the gym.   
-            <br>
-            <br>
-            Have a  
-                <span class="wordData" data-wait="1600" data-words='["phenomenal" ,"great" , "fantastic", "remarkable", "splendid", "relaxing", "productive", "terrific", "tremendous"]'>
-              </span> <span id="welcomeDay"></span>.
+        <section
+        class="mt-10 lg:mt-20 flex-row lg:flex justify-between items-start gap-2" id="my-skills"
+        >
+        <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 box__width_height p-4">
+          <p class="text-neutral-500 text-xs">a</p>
+          <h5 class="text-2xl text-neutral-900 mt-2 font__poppins">
+            Languages I use
+          </h5>
+          <p class="text-m mt-2 ">
+            &#x2713
+            HTML
           </p>
-        </section>
+          <p class="text-m ">
+            &#x2713
+            CSS
+          </p>
+          <p class="text-m ">
+            &#x2713
+            Javascript
+          </p>
+          <p class="text-m ">
+            &#x2713
+            Python
+          </p>
+          <p class="text-m ">
+            &#x2713
+            Node.js
+          </p>
+        </div>
+        <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 box__width_height p-4">
+          <p class="text-neutral-500 text-xs">b</p>
+          <h5 class="text-2xl text-neutral-900 mt-2 font__poppins">
+            Frameworks I use
+          </h5>
+          <p class="text-m mt-2 ">
+            &#x2713
+            Sveltekit
+          </p>
+          <p class="text-m ">
+            &#x2713
+            React
+          </p>
+          <p class="text-m ">
+            &#x2713
+            GSAP (animation)
+          </p>
+          <p class="text-m ">
+            &#x2713
+            SCSS (styling)
+          </p>
+          <p class="text-m ">
+            &#x2713
+            Tailwind (styling)
+          </p>
+        </div>
+        <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 box__width_height p-4">
+          <p class="text-neutral-500 text-xs">c</p>
+          <h5 class="text-2xl text-neutral-900 mt-2 font__poppins">
+            Currently learning
+          </h5>
+          <p class="text-m mt-2 ">
+            &#x2713
+            Flask APIs
+          </p>
+          <p class="text-m ">
+            &#x2713
+            Database structure
+          </p>
+          <p class="text-m ">
+            &#x2713
+              Business management
+            </p>
+        </div>
+      </section>
 
         <section class="mt-10 lg:mt-20 p-4">
-          <p class="text-neutral-500 text-xs" id="my-work">03</p>
-          <h4 class="text-2xl text-neutral-900 mt-2">
+          <p class="text-neutral-500 text-xs" id="my-work font__poppins">02</p>
+          <h4 class="text-2xl text-neutral-900 mt-2 font__poppins">
             UI design
           </h4>
           <p class="mt-2 text-lg ">
@@ -262,9 +315,9 @@
         </section>
 
         <section class="mt-10 lg:mt-20 p-4">
-          <h5 class="text-2xl text-neutral-900">Websites</h5>
+          <h5 class="text-2xl text-neutral-900 font__poppins">Websites</h5>
 
-          <p class="mt-6 text-xl">HRM</p>
+          <p class="mt-6 text-xl font__poppins">HRM</p>
           <a href="https://hrmblog.netlify.app/" target="_blank" role="Link to the live site">
             <button
               class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
@@ -303,7 +356,7 @@
             </p>
           </div>
 
-          <p class="mt-6 text-xl">Graphicpro</p>
+          <p class="mt-6 text-xl font__poppins">Graphicpro</p>
           <a href="https://graphicpro.netlify.app/" target="_blank" role="Link to the live site">
             <button
               class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
@@ -335,7 +388,7 @@
             </p>
           </div>
 
-          <p class="mt-6 text-xl">Personal Website</p>
+          <p class="mt-6 text-xl font__poppins">Personal Website</p>
           <button class="border border-neutral-900  rounded-xl p-2 mt-3 " role="Button disabled">
             <div>This website</div>
           </button>
@@ -359,84 +412,31 @@
           </div>
         </section>
 
-        <section
-          class="mt-10 lg:mt-20 flex-row lg:flex justify-between items-start gap-2" id="my-skills"
-        >
-          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900  p-4">
-            <p class="text-neutral-500 text-xs">a</p>
-            <h5 class="text-2xl text-neutral-900 mt-2">
-              Languages I use
-            </h5>
-            <p class="text-m mt-2 ">
-              &#x2713
-              HTML
-            </p>
-            <p class="text-m ">
-              &#x2713
-              CSS
-            </p>
-            <p class="text-m ">
-              &#x2713
-              Javascript
-            </p>
-            <p class="text-m ">
-              &#x2713
-              Python
-            </p>
-            <p class="text-m ">
-              &#x2713
-              Node.js
-            </p>
-          </div>
-          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900  p-4">
-            <p class="text-neutral-500 text-xs">b</p>
-            <h5 class="text-2xl text-neutral-900 mt-2">
-              Frameworks I use
-            </h5>
-            <p class="text-m mt-2 ">
-              &#x2713
-              Sveltekit
-            </p>
-            <p class="text-m ">
-              &#x2713
-              React
-            </p>
-            <p class="text-m ">
-              &#x2713
-              GSAP (animation)
-            </p>
-            <p class="text-m ">
-              &#x2713
-              SCSS (styling)
-            </p>
-            <p class="text-m ">
-              &#x2713
-              Tailwind (styling)
-            </p>
-          </div>
-          <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900  p-4">
-            <p class="text-neutral-500 text-xs">c</p>
-            <h5 class="text-2xl text-neutral-900 mt-2">
-              Currently learning
-            </h5>
-            <p class="text-m mt-2 ">
-              &#x2713
-              Python webscraping
-            </p>
-            <p class="text-m ">
-              &#x2713
-              Algorithms
-            </p>
-            <p class="text-m ">
-              &#x2713
-                Business management
-              </p>
-          </div>
+        <section class="mt-10 lg:mt-20 p-4" id="about-me">
+          <p class="text-neutral-500 text-xs font__poppins">03</p>
+          <h3 class="text-2xl text-neutral-900 mt-2 font__poppins">
+            About me
+          </h3>
+          <p class="mt-2 text-lg ">
+            I'm a student at the University of Exeter studying Business and Management. However, about 8 months ago, I also decided that I wanted
+            to learn how to code. Initially starting with Python, my journey then inevitably led me to learning how to build websites.
+            <br>
+            <br>
+            Having always had a passion for design, I love being able to convert an idea into a working product that people can interact with.
+            <br>
+            <br>
+            Some of my other interests include, skiing, cryptocurrency trading, NFT flipping and going to the gym.   
+            <br>
+            <br>
+            Have a  
+                <span class="wordData" data-wait="1600" data-words='["phenomenal" ,"great" , "fantastic", "remarkable", "splendid", "relaxing", "productive", "terrific", "tremendous"]'>
+              </span> <span id="welcomeDay"></span>.
+          </p>
         </section>
 
         <section class="mt-10 lg:mt-20 p-4">
-          <p class="text-neutral-500 text-xs" id="my-cv">04</p>
-          <h2 class="text-2xl text-neutral-900 mt-2">My cv</h2>
+          <p class="text-neutral-500 text-xs font__poppins" id="my-cv">04</p>
+          <h2 class="text-2xl text-neutral-900 mt-2 font__poppins">My cv</h2>
           <a href="./cv.html">
             <button
               class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
@@ -448,8 +448,8 @@
         </section>
 
         <section class="mt-10 lg:mt-20 p-4">
-          <p class="text-neutral-500 text-xs" id="contact-me">05</p>
-          <h6 class="text-2xl text-neutral-900 mt-2">Contact me</h6>
+          <p class="text-neutral-500 text-xs" id="contact-me font__poppins">05</p>
+          <h6 class="text-2xl text-neutral-900 mt-2 font__poppins">Contact me</h6>
           <a href="https://www.linkedin.com/in/william-jones-450715251/" target="_blank">
             <button
               class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
