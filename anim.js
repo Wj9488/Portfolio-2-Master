@@ -6,7 +6,7 @@ function gsapPageLoad() {
         ease: "expo.Out"
     })
     gsap.from("#anim__header_cta", {
-        delay: 1.5,
+        delay: 1.25,
         duration: 1, 
         opacity: 0, 
     })
@@ -18,7 +18,7 @@ function gsapPageLoad() {
     //     ease: "expo.Out"
     // })
     gsap.from("#content__gsap_fade", {
-        delay: 2.5,
+        delay: 1.5,
         duration: 0.5,
         opacity: 0,
         y: 10, 
