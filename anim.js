@@ -2,7 +2,7 @@ function gsapPageLoad() {
     gsap.from("#anim__headerText", {
         duration: 1, 
         opacity: 0, 
-        y: 30,
+        y: 10,
         ease: "expo.Out"
     })
     gsap.from("#anim__header_cta", {
@@ -10,17 +10,19 @@ function gsapPageLoad() {
         duration: 1, 
         opacity: 0, 
     })
-    gsap.from("#anim__main_nav", {
-        delay: 2,
-        duration: 1,
-        opacity: 0,
-        y: -20, 
-        ease: "expo.Out"
-    })
+    // gsap.from("#anim__main_nav", {
+    //     delay: 2,
+    //     duration: 1,
+    //     opacity: 0,
+    //     y: -20, 
+    //     ease: "expo.Out"
+    // })
     gsap.from("#content__gsap_fade", {
         delay: 2.5,
         duration: 0.5,
         opacity: 0,
+        y: 10, 
+        ease: "expo.Out"
     })
 }
 gsapPageLoad(); 
@@ -104,30 +106,6 @@ function gsapNav() {
 
 }
 gsapNav();
-
-function gsapScrollHandler() {
-    gsap.registerPlugin(ScrollTrigger)
-    if (window.innerWidth >= 700) {
-        gsap.to("#blob", {
-            scrollTrigger: {
-                trigger: ".gsap__headerScrollTrigger",
-                scrub: 2, 
-                start: "center center"
-            },
-            height: "100vh",
-        })
-    }
-    gsap.to("#grid__tile_one_bg", {
-        scrollTrigger: {
-            trigger: ".gsap__skillsScrollTrigger",
-            scrub: 6, 
-            start: "center center"
-        },
-        height: "100px",
-        width: "100px",
-    }) 
-}
-gsapScrollHandler()
 
 function handleCanvas() {
     const canvas = document.getElementById('rain__canvas');
