@@ -24,7 +24,6 @@
       gtag('config', 'G-PXKQ48KE9P');
     </script>
 
-    <div id="blob"></div>
     <div id="other__nav_toggle" class="hoverable">
       <svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14.8984 1.77973C1.38555 5.33248 -2.3249 9.09225 1.31902 20.4928C6.73855 32.9135 11.8996 35.8776 25.4601 32.9683C37.3424 30.3009 37.1934 24.9696 36.9281 15.4819L36.9271 15.4433C37.0623 -1.8152 29.8476 -1.54363 14.8984 1.77973Z" fill="#070707"/>
@@ -180,33 +179,30 @@
             </div>
         </nav>
 
-        <div class="border__horizontal theme__bg desktop__view_only" id="anim__border_horizontal"></div> 
+      <div class="content__width" id="primary__content_container">
 
-      <div class="md:w-7/12 mr-auto ml-auto" id="primary__content_container">
-
-        <header class="section__height_flex ml-auto mr-auto w-10/12 md:p-4 font__poppins">
-          <div class="flex-row lg:flex lg:justify-between items-center">
-              <h1 id="anim__headerText" class="text-4xl lg:text-5xl lg:w-10/12">
-                  I'm Will, a web developer who's determined to help you turn your next project
-                  into a stunning digital experience.
-              </h1>
-              <div class="mt-4 desktop__view_only">
-                  <svg id="anim__header_arrow" width="16" height="136" viewBox="0 0 16 136" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.29819 135.712C7.69162 136.1 8.32476 136.095 8.71236 135.702L15.0287 129.291C15.4163 128.897 15.4115 128.264 15.0181 127.876C14.6247 127.489 13.9915 127.493 13.6039 127.887L7.98945 133.586L2.29054 127.971C1.89711 127.584 1.26396 127.588 0.876361 127.982C0.488762 128.375 0.493487 129.008 0.886915 129.396L7.29819 135.712ZM6.00003 1.00746L7.00003 135.007L8.99997 134.993L7.99997 0.992538L6.00003 1.00746Z" fill="black"/>
-                  </svg>  
-              </div>
-          </div>
-          <a href="#contact-me" class="hoverable mt-4" id="anim__cta">
-              <div id="anim__header_cta" class="gsap__headerScrollTrigger mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl hover__link h__link_opacity_setter">
-                  <p class="text-2xl font__poppins">Let's talk</p>
-                  <div>
-                      <svg width="50" height="50" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle id="anim__cta_circle" cx="42.5" cy="42.5" r="42" stroke="#070707"/>
-                          <path class="path" fill="#070707" d="M41.3165 54.7307C41.7074 55.1209 42.3405 55.1203 42.7307 54.7294L49.0888 48.3596C49.479 47.9687 49.4784 47.3356 49.0875 46.9454C48.6966 46.5552 48.0635 46.5558 47.6733 46.9467L42.0217 52.6087L36.3596 46.9571C35.9687 46.5669 35.3356 46.5675 34.9454 46.9584C34.5552 47.3493 34.5558 47.9824 34.9467 48.3726L41.3165 54.7307ZM41 29.0009L41.0229 54.0239L43.0229 54.022L43 28.9991L41 29.0009Z"/>
-                      </svg>    
-                  </div>
-              </div>
-          </a>
+        <header class="section__height_flex content__width md:p-4">
+          <div class="flex-row">
+            <div class="flex-row lg:flex lg:justify-between items-center">
+                <h1 id="anim__headerText" class="text-5xl lg:text-6xl">
+                  I create professional & modern websites for your business.
+                </h1>
+            </div>
+            <a href="#contact-me" class="hoverable mt-4" id="anim__cta">
+                <div id="anim__header_cta" class="lg:mt-0 flex items-center justify-between gap-5 rounded-2xl hover__link h__link_opacity_setter">
+                    <p class="text-2xl">Let's talk</p>
+                    <div>
+                        <svg width="50" height="50" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle id="anim__cta_circle" cx="42.5" cy="42.5" r="42" stroke="#070707"/>
+                            <path class="path" fill="#070707" d="M41.3165 54.7307C41.7074 55.1209 42.3405 55.1203 42.7307 54.7294L49.0888 48.3596C49.479 47.9687 49.4784 47.3356 49.0875 46.9454C48.6966 46.5552 48.0635 46.5558 47.6733 46.9467L42.0217 52.6087L36.3596 46.9571C35.9687 46.5669 35.3356 46.5675 34.9454 46.9584C34.5552 47.3493 34.5558 47.9824 34.9467 48.3726L41.3165 54.7307ZM41 29.0009L41.0229 54.0239L43.0229 54.022L43 28.9991L41 29.0009Z"/>
+                        </svg>    
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="canvas__container">
+          <canvas id="rain__canvas"></canvas>
+        </div>
         </header>
         
         <div id="content__gsap_fade"><!-- <- GSAP CONTENT WRAP START DIV -->
@@ -215,7 +211,6 @@
         class="mt-10 lg:mt-20 flex-row lg:flex justify-between items-start gap-2" id="my-skills"
         >
         <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 box__width_height p-4">
-          <p class="text-neutral-500 text-xs">-</p>
           <h5 class="text-2xl text-neutral-900 mt-2 font__poppins">
             Languages I use
           </h5>
@@ -241,7 +236,6 @@
           </p>
         </div>
         <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 box__width_height p-4">
-          <p class="text-neutral-500 text-xs">-</p>
           <h5 class="text-2xl text-neutral-900 mt-2 font__poppins">
             Frameworks I use
           </h5>
@@ -271,7 +265,6 @@
           </p>
         </div>
         <div class="mt-4 lg:mt-0 rounded-xl border border-neutral-900 box__width_height p-4">
-          <p class="text-neutral-500 text-xs">-</p>
           <h5 class="text-2xl text-neutral-900 mt-2 font__poppins">
             Currently learning
           </h5>
@@ -597,7 +590,7 @@
     </div><!--  <- END GSAP WRAP DIV -->
 
       <footer
-        class="footer__height border-x border-t border-neutral-900 rounded-t-2xl flex-row p-4 justify-around items-center mt-10 lg:mt-20 lg:w-12/12 mr-auto ml-auto"
+        class="footer__height bg-neutral-50 border-x border-t border-neutral-900 rounded-t-2xl flex-row p-4 justify-around items-center mt-10 lg:mt-20 lg:w-12/12 mr-auto ml-auto"
       >
         <div class="flex-row lg:flex lg:justify-between">
           <div>

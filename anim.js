@@ -1,37 +1,32 @@
 function gsapPageLoad() {
-    gsap.from("#blob", {
-        duration: 2.5, 
-        left: "50%",
-        top: "0%",
-    })
-    gsap.from("#anim__border_horizontal", {
-        delay: 1.25, 
-        duration: 1,
-        width: "0%",
-    })
     gsap.from("#anim__headerText", {
-        delay: 1.5,
         duration: 1, 
         opacity: 0, 
-        y: -10,
+        y: 20,
+        ease: "Expo.easeInOuteaseInOut"
     })
     gsap.from("#anim__header_arrow", {
-        delay: 1.75,
+        delay: 1.25,
         duration: 1, 
         opacity: 0, 
         y: -20,
     })
     gsap.from("#anim__header_cta", {
-        delay: 2.25,
+        delay: 1.5,
         duration: 1, 
         opacity: 0, 
     })
     gsap.from("#anim__main_nav", {
-        delay: 2.5,
+        delay: 1.75,
         duration: 1, 
         opacity: 0, 
         y: -20, 
         ease: "expo.Out"
+    })
+    gsap.from("#content__gsap_fade", {
+        delay: 2,
+        duration: 0.5,
+        opacity: 0,
     })
 }
 gsapPageLoad(); 
@@ -139,3 +134,40 @@ function gsapScrollHandler() {
     }) 
 }
 gsapScrollHandler()
+
+function handleCanvas() {
+    const canvas = document.getElementById('rain__canvas');
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight / 2;
+		const ctx = canvas.getContext('2d');
+
+		// Create the rain drops
+		let drops = [];
+		for (var i = 0; i < 500; i++) {
+			drops.push({
+				x: Math.random() * canvas.width,
+				y: Math.random() * canvas.height,
+				speed: Math.random() * 4 + 2,
+				length: Math.random() * 20 + 5
+			});
+		}
+
+		function draw() {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+			// Draw the rain drops
+			ctx.fillStyle = "#000";
+			for (let i = 0; i < drops.length; i++) {
+				ctx.fillRect(drops[i].x, drops[i].y, 1, drops[i].length);
+				drops[i].y += drops[i].speed;
+				if (drops[i].y > canvas.height) {
+					drops[i].y = 0;
+				}
+			}
+
+			requestAnimationFrame(draw);
+		}
+
+		draw();
+}
+handleCanvas()

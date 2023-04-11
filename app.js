@@ -35,8 +35,7 @@ function customCursor() {
 
   function randomBackground() {
     const colors = [
-      "#f8f7ff",
-      "#edf2f4",
+      "#fafafa",
     ];
     const documentBody = document.querySelector('body');
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -139,14 +138,3 @@ function hoverCta() {
   })
 }
 hoverCta();
-
-function getWebSocketData() {
-  const WebSocket = require('ws');
-
-  const ws = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@trade');
-
-  ws.on('message', function incoming(data) {
-      console.log(data);
-  });
-}
-getWebSocketData()
