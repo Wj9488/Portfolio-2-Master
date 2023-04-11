@@ -35,7 +35,7 @@ function customCursor() {
 
   function randomBackground() {
     const colors = [
-      "#fafafa",
+      "",
     ];
     const documentBody = document.querySelector('body');
     const randomColor = colors[Math.floor(Math.random() * colors.length)];

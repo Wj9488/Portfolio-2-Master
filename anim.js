@@ -2,14 +2,8 @@ function gsapPageLoad() {
     gsap.from("#anim__headerText", {
         duration: 1, 
         opacity: 0, 
-        y: 20,
-        ease: "Expo.easeInOuteaseInOut"
-    })
-    gsap.from("#anim__header_arrow", {
-        delay: 1.25,
-        duration: 1, 
-        opacity: 0, 
-        y: -20,
+        y: 30,
+        ease: "expo.Out"
     })
     gsap.from("#anim__header_cta", {
         delay: 1.5,
@@ -17,14 +11,14 @@ function gsapPageLoad() {
         opacity: 0, 
     })
     gsap.from("#anim__main_nav", {
-        delay: 1.75,
-        duration: 1, 
-        opacity: 0, 
+        delay: 2,
+        duration: 1,
+        opacity: 0,
         y: -20, 
         ease: "expo.Out"
     })
     gsap.from("#content__gsap_fade", {
-        delay: 2,
+        delay: 2.5,
         duration: 0.5,
         opacity: 0,
     })

@@ -22,8 +22,8 @@ canvas {
 }
 
 .sup__new {
-  color: grey;
-  background: linear-gradient(to right, rgb(255, 190, 11, 0.25), rgb(239, 71, 111, 0.25), rgb(59, 130, 246, 0.25), rgba(6, 214, 158, 0.25));
+  color: #fafafa;
+  background: #000;
   padding: 4px 8px;
   border-radius: 20px;
   font-size: 12px;
@@ -263,5 +263,11 @@ canvas {
       height: 100%;
       margin-top: 5%;
     }
-    
+    .box__width_height {
+      min-height: 25vh;
+      min-width: 100%;
+    }
+    .hover__link {
+      margin-top: 5%;
+    }
 }
