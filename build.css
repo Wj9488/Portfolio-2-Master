@@ -239,6 +239,10 @@ canvas {
   .desktop__view_only {
     display: none;
   }
+  .box__width_height {
+    min-height: 30vh;
+    min-width: 0%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -272,7 +276,7 @@ canvas {
     }
     .box__width_height {
       min-height: 25vh;
-      min-width: 100%;
+      min-width: 0%;
     }
     #anim__header_cta {
       margin-top: 5%;
