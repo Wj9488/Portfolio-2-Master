@@ -235,7 +235,11 @@ canvas {
 #anim__header_cta {
   margin-top: 2.5%;
 }
-
+@media screen and (max-width: 1180px) {
+  .desktop__view_only {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1024px) {
     .desktop__view_only {
