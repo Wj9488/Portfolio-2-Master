@@ -2,7 +2,7 @@ function gsapPageLoad() {
     gsap.from("#anim__headerText", {
         duration: .5, 
         opacity: 0, 
-        y: 20,
+        y: 30,
         ease: "expo.Out"
     })
     gsap.from("#job__notif", {

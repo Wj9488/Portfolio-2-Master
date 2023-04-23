@@ -85,12 +85,26 @@ canvas {
 }
 .header__grid_title {
   grid-area: title;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.char {
+  transform: translateY(115px);
+  transition: transform .5s;
 }
 #rain__canvas {
   grid-area: rain;
 }
 
 /* Header grid end */
+
+/* Services Grid */
+.services__grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+/* Services Grid end */
 
 .content__width {
   padding-left: 2.5%;
@@ -312,18 +326,26 @@ canvas {
 }
 
 @media screen and (max-width: 1024px) {
-  .header__grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "title"
-    "rain"
-    ;
-    place-items: center;
-    gap: 0rem;
-    margin-top: 1.25rem;
-  }
+    .header__grid {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "title"
+      "rain"
+      ;
+      place-items: center;
+      gap: 0rem;
+      margin-top: 1.25rem;
+    }
+    /* Services Grid */
+    .services__grid {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      gap: 0rem;
+    }
+    /* Services Grid end */
     .desktop__view_only {
         display: none;
     }
