@@ -1,17 +1,27 @@
 function gsapPageLoad() {
     gsap.from("#anim__headerText", {
-        duration: 1, 
+        duration: .5, 
         opacity: 0, 
-        y: 10,
+        y: 20,
         ease: "expo.Out"
     })
+    gsap.from("#job__notif", {
+        duration: 0.5, 
+        opacity: 0, 
+        delay: .5,
+    })
     gsap.from("#anim__header_cta", {
-        delay: 1.25,
+        delay: 1,
         duration: 1, 
         opacity: 0, 
     })
+    gsap.from("canvas", {
+        delay: 1.5, 
+        duration: 1, 
+        opacity: 0,
+    })
     // gsap.from("#anim__main_nav", {
-    //     delay: 2,
+    //     delay: 2.5,
     //     duration: 1,
     //     opacity: 0,
     //     y: -20, 
