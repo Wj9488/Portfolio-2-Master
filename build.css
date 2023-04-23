@@ -15,12 +15,25 @@ canvas {
   margin-top: 5%;
 }
 
+.custom__bg_yellow {
+  background: #ffb703;
+}
+
+#scale__target {
+  transition: all 0.2s ease-in-out;
+}
+.custom__shadow {
+  -webkit-box-shadow: 5px 7px 18px -10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 7px 18px -10px rgba(0,0,0,0.5);
+  box-shadow: 5px 7px 18px -10px rgba(0,0,0,0.5);
+}
 .job__notif {
   background-color: rgb(58, 134, 255, 0.25);
   color: #3a86ff;
   padding: 4px 10px;
   width: fit-content;
   margin-left: 2.5%;
+  gap: 2.5px;
 }
 .job__notif_anim {
   animation: 1s infinite wave;
@@ -58,10 +71,6 @@ canvas {
   }
 }
 
-#scale__target {
-  transition: all 0.2s ease-in-out;
-}
-
  /* Header Grid */
 
 .header__grid {
@@ -81,10 +90,11 @@ canvas {
   grid-area: rain;
 }
 
+/* Header grid end */
+
 .content__width {
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 
 .sup__new {
