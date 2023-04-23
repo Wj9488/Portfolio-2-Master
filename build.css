@@ -58,6 +58,10 @@ canvas {
   }
 }
 
+#scale__target {
+  transition: all 0.2s ease-in-out;
+}
+
  /* Header Grid */
 
 .header__grid {

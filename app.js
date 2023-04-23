@@ -138,3 +138,17 @@ function hoverCta() {
   })
 }
 hoverCta();
+
+function handleScale() {
+  const notif = document.getElementById("job__notif")
+  const scaleTarget = document.getElementById("scale__target")
+
+  notif.addEventListener("mouseenter", () => {
+      scaleTarget.style.scale = "1.025"
+  })
+  
+  notif.addEventListener("mouseleave", () => {
+      scaleTarget.style.scale = "1"
+  })
+}
+handleScale()
