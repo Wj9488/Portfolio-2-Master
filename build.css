@@ -315,6 +315,22 @@ canvas {
 #anim__header_cta {
   margin-top: 2.5%;
 }
+#anim__headerText {
+  position: relative;
+  opacity: 0;
+}
+.text__first_bg{
+  background-color: #fafafa;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transform-origin: left;
+  transform: scaleX(0);
+}
 @media screen and (max-width: 1180px) {
   .desktop__view_only {
     display: none;

@@ -1,14 +1,23 @@
 function gsapPageLoad() {
-    gsap.from("#anim__headerText", {
+    var tl = new TimelineLite({delay: 0}),
+    firstBg = document.querySelectorAll('.text__first_bg'),
+    word  = document.querySelectorAll('#anim__headerText');
+  
+    tl
+        .to(firstBg, .4, {scaleX:1})
+        .to(word, 0.2, {opacity:1}, "-=0.1")  
+        .to(firstBg, .4, {scaleX:0})
+    
+    // gsap.from("#anim__headerText", {
+    //     duration: .5,
+    //     opacity: 0,
+    //     y: 30, 
+    //     ease: "expo.Out"
+    // })
+    gsap.from("#job__notif", {
         duration: .5, 
         opacity: 0, 
-        y: 30,
-        ease: "expo.Out"
-    })
-    gsap.from("#job__notif", {
-        duration: 0.5, 
-        opacity: 0, 
-        delay: .5,
+        delay: 1,
     })
     gsap.from("#anim__header_cta", {
         delay: 1,
@@ -17,7 +26,7 @@ function gsapPageLoad() {
     })
     gsap.from("canvas", {
         delay: 1.5, 
-        duration: 1, 
+        duration: .5, 
         opacity: 0,
     })
     // gsap.from("#anim__main_nav", {
@@ -29,7 +38,7 @@ function gsapPageLoad() {
     // })
     gsap.from("#content__gsap_fade", {
         delay: 1.5,
-        duration: 0.5,
+        duration: .5,
         opacity: 0,
         y: 10, 
         ease: "expo.Out"
