@@ -15,10 +15,6 @@ canvas {
   margin-top: 5%;
 }
 
-.custom__bg_yellow {
-  background: #ffb703;
-}
-
 #scale__target {
   transition: all 0.2s ease-in-out;
 }
@@ -27,49 +23,50 @@ canvas {
   -moz-box-shadow: 5px 7px 18px -10px rgba(0,0,0,0.5);
   box-shadow: 5px 7px 18px -10px rgba(0,0,0,0.5);
 }
-.job__notif {
-  background-color: rgb(58, 134, 255, 0.25);
-  color: #3a86ff;
+.info__bar {
+  /* background: #affc41;
+  color: #000;
   padding: 4px 10px;
-  width: fit-content;
-  margin-left: 2.5%;
+  width: fit-content; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
   gap: 2.5px;
 }
-.job__notif_anim {
-  animation: 1s infinite wave;
+.text-right {
+  text-align: right;
 }
-.job__notif_bg {
-  background: rgb(58, 134, 255, 0.25);
-  color: #3a86ff;
-  border: 1px solid #3a86ff;
+.gsap__divider {
+  height: 1px;
+  background-color: #000;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
 }
-
-@keyframes wave {
-  0% {
-    rotate: -2.5deg;
-  }
-  14%{
-    rotate: -5deg;
-  }
-  28% {
-    rotate: -2.5deg;
-  }
-  42% {
-    rotate: -0deg;
-  }
-  56% {
-    rotate: 0deg;
-  }
-  70% {
-    rotate: 2.5deg;
-  }
-  84% {
-    rotate: 5deg;
-  }
-  100% {
-    rotate: 2.5deg;
-  }
+.gsap__divider_main {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
 }
+.info__bar_subTxt {
+  font-weight: normal;
+}
+.info__bar_bg {
+  background: #affc41;
+  color: #000;
+  border: 1px solid #000;
+}
+/* .job__notif_bg {
+  background-color: #7cbb00;
+} */
+.frame__bg {
+  background-color: #f65314;
+  color: white;
+}
+.freelance__bg {
+  background-color: #ffbb00;
+} 
 
  /* Header Grid */
 
@@ -100,9 +97,31 @@ canvas {
 /* Services Grid */
 .services__grid {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "freelance freelance experience experience"
+  "languages frameworks learning learning"
+  ;
   gap: 1.25rem;
+}
+.services__border {
+  border-bottom: 1px solid #070707;
+}
+#service__grid_freelance {
+  grid-area: freelance;
+}
+#service__grid_experience {
+  grid-area: experience;
+}
+#service__grid_languages {
+  grid-area: languages;
+}
+#service__grid_frameworks {
+  grid-area: frameworks;
+}
+#service__grid_learning {
+  grid-area: learning;
 }
 /* Services Grid end */
 
@@ -159,11 +178,6 @@ canvas {
 
 .theme__bg {
     background-color: #070707;
-}
-
-.box__width_height {
-  min-height: 30vh;
-  min-width: 400px;
 }
 
 .opacity__background {
@@ -335,10 +349,6 @@ canvas {
   .desktop__view_only {
     display: none;
   }
-  .box__width_height {
-    min-height: 30vh;
-    min-width: 0%;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -357,9 +367,15 @@ canvas {
     /* Services Grid */
     .services__grid {
       display: grid;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr;
-      gap: 0rem;
+      grid-template-areas: 
+      "freelance"
+      "experience"
+      "languages"
+      "frameworks"
+      "learning"
+      ;
     }
     /* Services Grid end */
     .desktop__view_only {
@@ -383,16 +399,12 @@ canvas {
     }
     .canvas__container {
       width: 100%;
-      height: 25vh;
+      height: 35vh;
       margin-bottom: 1.25rem;
     }
     canvas {
       width: 100%;
       height: 100%;
-    }
-    .box__width_height {
-      min-height: 25vh;
-      min-width: 0%;
     }
     #anim__header_cta {
       margin-top: 5%;

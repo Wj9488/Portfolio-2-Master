@@ -33,31 +33,6 @@ function customCursor() {
   }
   customCursor();
 
-  function randomBackground() {
-    const colors = [
-      "",
-    ];
-    const documentBody = document.querySelector('body');
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-    documentBody.style.backgroundColor = randomColor;
-
-    const svg = document.getElementById('svg__inherit_bg');
-    const menuToggleSvg = document.getElementById("svg__menu_toggle")
-
-    const bgColor = getComputedStyle(documentBody).backgroundColor;
-    svg.style.fill = bgColor;
-    svg.style.stroke = bgColor;
-    menuToggleSvg.style.fill = bgColor;
-}
-
-const randomiseSwitch = document.getElementById("colourSwitchToggle")
-randomiseSwitch.addEventListener("click", () => {
-  randomBackground();
-})
-
-randomBackground()
-
 function typingAnimation() {
     
     class TypeWriter {

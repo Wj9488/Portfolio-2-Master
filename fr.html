@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./build.css" />
     <title>Will Jones | Portefeuille Personnel</title>
   </head>
-  <body class="overflow-x-hidden bg-neutral-50">
+  <body id="app__body" class="overflow-x-hidden bg-neutral-50">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXKQ48KE9P"></script>
     <script>
@@ -85,7 +85,7 @@
 
                 <a href="#services" id="anim__navItem" class="nav__z_index">
                 <div class="flex justify-between items-center gap-5 rounded-2xl p-4 bg-white hoverable">
-                    <li class="text-2xl hover__link font-light">Mes services</li>
+                    <li class="text-2xl hover__link font-light">Services</li>
                     <div>
                         <svg width="51" height="16" viewBox="0 0 51 16" xmlns="http://www.w3.org/2000/svg">
                             <path  fill="black" d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"/>
@@ -96,7 +96,7 @@
 
                 <a href="#my-skills" id="anim__navItem" class="nav__z_index">
                   <div class="mt-4 lg:mt-0 flex justify-between items-center gap-5 rounded-2xl p-4 bg-white hoverable">
-                      <li class="text-2xl hover__link font-light">Mes compétences</li>
+                      <li class="text-2xl hover__link font-light">Compétences</li>
                       <div>
                           <svg width="51" height="16" viewBox="0 0 51 16" xmlns="http://www.w3.org/2000/svg">
                               <path  fill="black" d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"/>
@@ -183,10 +183,26 @@
             </div>
         </nav>
 
-        <div id="job__notif" class="flex items-center gap-2 job__notif rounded-2xl">
-          <p class="job__notif_anim text-xl">👋</p> 
-          <p class="">Je recherche 1 à 3 mois d'expérience de travail</p>
+
+        <div id="gsap__divider_info_1" class="gsap__divider mb-2"></div>
+        <div id="job__notif" class="info__bar flex items-center justify-between">
+          <p class="text-xs xl:text-sm font-bold">
+            >> Seeking work experience
+            <br>
+            <span class="info__bar_subTxt">1 - 3 months</span> 
+          </p>
+          <p class="text-xs xl:text-sm font-bold text-center">
+            >> Studying at Exeter University <<
+            <br>
+            <span class="info__bar_subTxt">Graduating 2024</span> 
+          </p>
+          <p class="text-xs xl:text-sm font-bold text-right">
+            Open to Freelance <<
+            <br>
+            <span class="info__bar_subTxt">Contact me</span> 
+          </p>
         </div>
+        <div id="gsap__divider_info_2" class="gsap__divider mt-2"></div>
 
       <div class="content__width" id="primary__content_container">
 
@@ -194,7 +210,8 @@
           <div class="flex-row">
             <div class="flex-row lg:flex lg:justify-between items-center">
                 <h1 id="anim__headerText" class="text-5xl lg:text-6xl"> 
-                  Je crée des sites Web Créatifs, Modernes et Professionnels pour les Petites Entreprises.
+                  <span>Je crée des sites Web Créatifs, Modernes et Professionnels pour les Petites Entreprises.</span> 
+                  <span class="text__first_bg"></span>
                 </h1>
             </div>
             <div class="flex items-center justify-between">
@@ -211,7 +228,7 @@
                 </a>
                 <a href="#my-work" class="hoverable mt-4" id="anim__cta">
                   <div id="anim__header_cta" class="lg:mt-0 flex items-center justify-between gap-5 rounded-2xl hover__link h__link_opacity_setter">
-                      <p class="text-lg">explorer <span class="text-2xl">&#x21b4;</span></p>
+                      <p class="text-lg">mon travail <span class="text-2xl">&#x21b4;</span></p>
                   </div>
               </a>
             </div>  
@@ -223,12 +240,12 @@
         
         <div id="content__gsap_fade"><!-- <- GSAP CONTENT WRAP START DIV -->
 
-        <section class="">
+        <section class="mt-5 xl:mt-0">
           <p class="text-neutral-500 text-xs" id="services">01</p>
-          <h2 class="text-2xl text-neutral-900 mt-2">Services</h2>
+          <h2 class="text-2xl text-neutral-900 mt-2">Services & Compétences</h2>
           <div class="services__grid mt-4">
-            <div class="lg:mt-0 rounded-xl border border-neutral-900 p-4">
-              <p class="text-2xl">&#x2692; <span class="text-lg">Free-lance</span></p>
+            <div id="service__grid_freelance" class="lg:mt-0 rounded-xl border border-neutral-900 p-4">
+              <p class="text-2xl"><span class="text-lg">Free-lance</span></p>
               <p class="text-m mt-2">
                 Je peux concevoir et développer un site Web moderne de plusieurs pages pour votre entreprise ou votre projet. Je peux construire un chargement entièrement réactif, optimisé pour le référencement et rapide
                 des sites internet utilisant des technologies de pointe pour vous apporter une solution sur mesure entièrement adaptée à votre application. 
@@ -242,8 +259,8 @@
                 Je m'occupe de la conception et du développement
               </p>
             </div>
-            <div id="scale__target" class="mt-4 lg:mt-0 rounded-xl job__notif_bg p-4">
-              <p class="text-2xl">👨‍💻 <span class="text-lg">Expérience de travail à temps partiel ou à plein temps</span></p>
+            <div id="service__grid_experience" class="lg:mt-0 border border-neutral-900 rounded-xl job__notif_bg p-4">
+              <p class="text-2xl"><span class="text-lg">Expérience de travail à temps partiel ou à plein temps</span></p>
               <p class="text-m mt-2">
                 Je suis une personne motivée et enthousiaste avec un fort intérêt pour l'industrie du web design.
                 Alors que j'ai déjà développé une base solide en programmation et en conception de sites Web, je 
@@ -260,24 +277,9 @@
                 Bilingue Français / Anglais
               </p>
             </div>
-          </div>
-          <a href="#contact-me">
-            <button
-              class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
-            >
-              <div>Contactez moi &#x21b4;</div>
-              <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
-            </button>
-          </a>
-        </section>
-
-        <section
-        class="mt-10 lg:mt-20 gap-2" id="my-skills"
-        >
-        <h2 class="text-2xl text-neutral-900 mt-2">Mes compétences</h2>
-          <div class="flex-row mt-4 lg:flex justify-between items-start">
-            <div class="rounded-xl border border-neutral-900 box__width_height mt-4 xl:mt-0 p-4">
-              <p class="text-2xl text-neutral-900 mt-2">
+          
+            <div id="service__grid_languages" class="rounded-xl border border-neutral-900 xl:mt-0 p-4">
+              <p id="my-skills" class="text-lg text-neutral-900 mt-2">
                 Langues que j'utilise
               </p>
               <p class="text-m mt-2 ">
@@ -305,8 +307,8 @@
                 Node.js
               </p>
             </div>
-            <div class="rounded-xl border border-neutral-900 box__width_height mt-4 xl:mt-0 p-4">
-              <p class="text-2xl text-neutral-900 mt-2 font__poppins">
+            <div id="service__grid_frameworks" class="rounded-xl border border-neutral-900 xl:mt-0 p-4">
+              <p class="text-lg text-neutral-900 mt-2 font__poppins">
                 Les frameworks que j'utilise
               </p>
               <p class="text-m mt-2 ">
@@ -334,8 +336,8 @@
                 Tailwind 
               </p>
             </div>
-            <div class="rounded-xl border border-neutral-900 box__width_height mt-4 xl:mt-0 p-4">
-              <p class="text-2xl text-neutral-900 mt-2 font__poppins">
+            <div id="service__grid_learning" class="rounded-xl border border-neutral-900 xl:mt-0 p-4">
+              <p class="text-lg text-neutral-900 mt-2 font__poppins">
                 En cours d'apprentissage
               </p>
               <p class="text-m mt-2 ">
@@ -352,9 +354,17 @@
                 </p>
             </div>
           </div>
-      </section>
+          <a href="#contact-me">
+            <button
+              class="hoverable border border-neutral-900 w-full rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
+            >
+              <div>Contactez moi &#x21b4;</div>
+              <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
+            </button>
+          </a>
+        </section>
 
-        <section class="mt-10 lg:mt-20 p-4">
+        <section class="mt-10 lg:mt-6 p-4">
           <p class="text-neutral-500 text-xs" id="my-work">02</p>
           <h5 class="text-2xl text-neutral-900">Sites</h5>
 

@@ -1,31 +1,42 @@
 function gsapPageLoad() {
-    var tl = new TimelineLite({delay: 0}),
+    const tl = new TimelineLite({delay: 0}),
+    documentBody = document.getElementById("app__body")
     firstBg = document.querySelectorAll('.text__first_bg'),
     word  = document.querySelectorAll('#anim__headerText');
   
     tl
+        .to(documentBody, .2, {backgroundColor: "#000"})
+        .to(documentBody, .2, {backgroundColor: "#ffbb00"})
+        .to(documentBody, .2, {backgroundColor: "#06d6a0"})
+        .to(documentBody, .2, {backgroundColor: "#affc41"})
+        // .to(documentBody, .2, {backgroundColor: "#3a86ff"})
+        .to(documentBody, .2, {backgroundColor: "#fafafa"})
         .to(firstBg, .4, {scaleX:1})
         .to(word, 0.2, {opacity:1}, "-=0.1")  
         .to(firstBg, .4, {scaleX:0})
-    
-    // gsap.from("#anim__headerText", {
-    //     duration: .5,
-    //     opacity: 0,
-    //     y: 30, 
-    //     ease: "expo.Out"
-    // })
+
+    gsap.from("#gsap__divider_info_1", {
+        delay: 2,
+        duration: .5, 
+        width: "0%",
+    })
+    gsap.from("#gsap__divider_info_2", {
+        delay: 2.25,
+        duration: .5, 
+        width: "0%",
+    })
     gsap.from("#job__notif", {
         duration: .5, 
         opacity: 0, 
-        delay: 1,
+        delay: 2.5,
     })
     gsap.from("#anim__header_cta", {
-        delay: 1,
+        delay: 2,
         duration: 1, 
         opacity: 0, 
     })
     gsap.from("canvas", {
-        delay: 1.5, 
+        delay: 2.5, 
         duration: .5, 
         opacity: 0,
     })
@@ -37,12 +48,29 @@ function gsapPageLoad() {
     //     ease: "expo.Out"
     // })
     gsap.from("#content__gsap_fade", {
-        delay: 1.5,
+        delay: 2.5,
         duration: .5,
         opacity: 0,
         y: 10, 
         ease: "expo.Out"
     })
+
+    // gsap.from("#gsap__divider_info_3", {
+    //     scrollTrigger: {
+    //         trigger: "#gsap__divider_info_3",
+    //         start: "top center",
+    //     },
+    //     duration: 1,
+    //     width: "0%",
+    // })
+    // gsap.from("#gsap__divider_info_4", {
+    //     scrollTrigger: {
+    //         trigger: "#gsap__divider_info_3",
+    //         start: "top center",
+    //     },
+    //     duration: 1.25,
+    //     width: "0%",
+    // })
 }
 gsapPageLoad(); 
 
