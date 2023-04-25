@@ -131,24 +131,6 @@ function gsapPageLoad() {
         stagger: .25,
         y: 20,
     })
-    gsap.from("#gsap__about", {
-        scrollTrigger: {
-            trigger: "#gsap__about",
-            start: "top center",
-        },
-        duration: .5,
-        opacity: 0,
-        y: 20,
-    })
-    gsap.from("#gsap__cv_btn", {
-        scrollTrigger: {
-            trigger: "#gsap__cv_btn",
-            start: "top center",
-        },
-        duration: .5,
-        opacity: 0,
-        y: 20,
-    })
     gsap.from("footer", {
         scrollTrigger: {
             trigger: "footer",
