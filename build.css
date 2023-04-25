@@ -106,22 +106,34 @@ canvas {
   gap: 1.25rem;
 }
 .services__border {
-  border-bottom: 1px solid #070707;
+  height: 1px;
+  width: 100%;
+  background-color: #000;
 }
 #service__grid_freelance {
   grid-area: freelance;
+  border-radius: .75rem;
+  padding: 1.25rem;
 }
 #service__grid_experience {
   grid-area: experience;
+  border-radius: .75rem;
+  padding: 1.25rem;
 }
 #service__grid_languages {
   grid-area: languages;
+  border-radius: .75rem;
+  padding: 1.25rem;
 }
 #service__grid_frameworks {
   grid-area: frameworks;
+  border-radius: .75rem;
+  padding: 1.25rem;
 }
 #service__grid_learning {
   grid-area: learning;
+  border-radius: .75rem;
+  padding: 1.25rem;
 }
 /* Services Grid end */
 

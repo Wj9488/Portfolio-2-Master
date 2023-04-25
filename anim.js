@@ -40,13 +40,13 @@ function gsapPageLoad() {
         duration: .5, 
         opacity: 0,
     })
-    // gsap.from("#anim__main_nav", {
-    //     delay: 2.5,
-    //     duration: 1,
-    //     opacity: 0,
-    //     y: -20, 
-    //     ease: "expo.Out"
-    // })
+    gsap.from("#anim__main_nav", {
+        delay: 2.5,
+        duration: 1,
+        opacity: 0,
+        y: -10, 
+        ease: "expo.Out"
+    })
     gsap.from("#content__gsap_fade", {
         delay: 2.5,
         duration: .5,
@@ -54,23 +54,42 @@ function gsapPageLoad() {
         y: 10, 
         ease: "expo.Out"
     })
+    // gsap.from(".services__border", {
+    //     duration: .5,
+    //     delay: 2.75,
+    //     width: "0%"
+    // })
+    gsap.to(".services__border", {
+        scrollTrigger: {
+            trigger: "#service__grid_experience",
+            toggleActions: "restart none reverse none",
+            start: "center center",
+        },
+        duration: 1,
+        width: "50%",
+    })
 
-    // gsap.from("#gsap__divider_info_3", {
-    //     scrollTrigger: {
-    //         trigger: "#gsap__divider_info_3",
-    //         start: "top center",
-    //     },
-    //     duration: 1,
-    //     width: "0%",
-    // })
-    // gsap.from("#gsap__divider_info_4", {
-    //     scrollTrigger: {
-    //         trigger: "#gsap__divider_info_3",
-    //         start: "top center",
-    //     },
-    //     duration: 1.25,
-    //     width: "0%",
-    // })
+    gsap.from("#gsap__divider_info_3", {
+        scrollTrigger: {
+            trigger: "#gsap__divider_info_3",
+            start: "top center",
+        },
+        duration: 1,
+        width: "0%",
+    })
+    gsap.from("#gsap__divider_info_4", {
+        scrollTrigger: {
+            trigger: "#gsap__divider_info_3",
+            start: "top center",
+        },
+        duration: 1.25,
+        width: "0%",
+    })
+
+
+
+    // restart center 
+    // restart reverse 
 }
 gsapPageLoad(); 
 
