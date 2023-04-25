@@ -85,9 +85,79 @@ function gsapPageLoad() {
         duration: 1.25,
         width: "0%",
     })
-
-
-
+    gsap.from("#gsap__work_ffa", {
+        scrollTrigger: {
+            trigger: "#gsap__work_ffa",
+            start: "top center",
+        },
+        duration: .5,
+        opacity: 0,
+        y: 20,
+    })
+    gsap.from("#gsap__work_kx", {
+        scrollTrigger: {
+            trigger: "#gsap__work_kx",
+            start: "top center",
+        },
+        duration: .5,
+        opacity: 0,
+        y: 20,
+    })
+    gsap.from("#gsap__work_hrm", {
+        scrollTrigger: {
+            trigger: "#gsap__work_hrm",
+            start: "top center",
+        },
+        duration: .5,
+        opacity: 0,
+        y: 20,
+    })
+    gsap.from("#gsap__work_pp", {
+        scrollTrigger: {
+            trigger: "#gsap__work_pp",
+            start: "top center",
+        },
+        duration: .5,
+        opacity: 0,
+        y: 20,
+    })
+    gsap.from(".gsap__wireframe", {
+        scrollTrigger: {
+            trigger: ".gsap__wireframe",
+            start: "top center",
+        },
+        duration: .5,
+        opacity: 0,
+        stagger: .25,
+        y: 20,
+    })
+    gsap.from("#gsap__about", {
+        scrollTrigger: {
+            trigger: "#gsap__about",
+            start: "top center",
+        },
+        duration: .5,
+        opacity: 0,
+        y: 20,
+    })
+    gsap.from("#gsap__cv_btn", {
+        scrollTrigger: {
+            trigger: "#gsap__cv_btn",
+            start: "top center",
+        },
+        duration: .5,
+        opacity: 0,
+        y: 20,
+    })
+    gsap.from("footer", {
+        scrollTrigger: {
+            trigger: "footer",
+            // start: "top center",
+        },
+        duration: .5,
+        opacity: 0,
+        y: 20,
+    })
     // restart center 
     // restart reverse 
 }
