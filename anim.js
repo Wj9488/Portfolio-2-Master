@@ -3,14 +3,17 @@ function gsapPageLoad() {
     documentBody = document.getElementById("app__body")
     firstBg = document.querySelectorAll('.text__first_bg'),
     word  = document.querySelectorAll('#anim__headerText');
+    preloader = document.querySelector(".preloader")
   
     tl
-        .to(documentBody, .2, {backgroundColor: "#000"})
-        .to(documentBody, .2, {backgroundColor: "#ffbb00"})
-        .to(documentBody, .2, {backgroundColor: "#06d6a0"})
-        .to(documentBody, .2, {backgroundColor: "#affc41"})
+        // .to(documentBody, .2, {backgroundColor: "#070707"})
+        .to(documentBody, .6, {backgroundColor: "#e63946"})
+        .from(preloader, .2, {opacity: 0, y: 60, display: "none"})
+        .to(preloader, .2, {opacity: 0, y: -60, display: "none"})
+        // .to(documentBody, .2, {backgroundColor: "#d00000"})
+        // .to(documentBody, .2, {backgroundColor: "#d00000"})
         // .to(documentBody, .2, {backgroundColor: "#3a86ff"})
-        .to(documentBody, .2, {backgroundColor: "#fafafa"})
+        .to(documentBody, .2, {backgroundColor: "#faf9f9"})
         .to(firstBg, .4, {scaleX:1})
         .to(word, 0.2, {opacity:1}, "-=0.1")  
         .to(firstBg, .4, {scaleX:0})
