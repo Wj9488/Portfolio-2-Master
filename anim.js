@@ -7,7 +7,7 @@ function gsapPageLoad() {
   
     tl
         // .to(documentBody, .2, {backgroundColor: "#070707"})
-        .to(documentBody, .6, {backgroundColor: "#e63946"})
+        .to(documentBody, .6, {backgroundColor: "#070707"})
         .from(preloader, .2, {opacity: 0, y: 60, display: "none"})
         .to(preloader, .2, {opacity: 0, y: -60, display: "none"})
         // .to(documentBody, .2, {backgroundColor: "#d00000"})
