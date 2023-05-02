@@ -203,7 +203,6 @@ function gsapNav() {
     const altNavTrigger = document.getElementById("other__nav_toggle")
 
     window.addEventListener("scroll", () => {
-        console.log(window.pageYOffset.toFixed(0))
         if (window.pageYOffset > 40) {
             gsap.to(altNavTrigger, {
                 opacity: 1,
@@ -236,7 +235,7 @@ function handleCanvas() {
 
 		// Create the rain drops
 		let drops = [];
-		for (var i = 0; i < 500; i++) {
+		for (let i = 0; i < 500; i++) {
 			drops.push({
 				x: Math.random() * canvas.width,
 				y: Math.random() * canvas.height,
