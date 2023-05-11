@@ -57,6 +57,11 @@ function gsapPageLoad() {
         y: 10, 
         ease: "expo.Out"
     })
+    gsap.from("#noiseEffect", {
+        delay: 2.75,
+        duration: .5,
+        opacity: 0,
+    })
     // gsap.from(".services__border", {
     //     duration: .5,
     //     delay: 2.75,

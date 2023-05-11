@@ -26,6 +26,27 @@
 
     <div class="preloader grotesk font-bold">W/J</div>
 
+    <div id='noiseEffect' class='noiseSvg'>
+      <svg class="" width="100%" height="100%">
+          <filter id="noise">
+              <feTurbulence
+              baseFrequency="4.7"
+              seed="0"
+              type="fractalNoise"
+              fill="#fafafa"
+              >
+              <animate 
+              attributeName="seed"
+              values="0;40"
+              dur="800ms"
+              repeatCount="indefinite"
+              />
+              </feTurbulence>
+          </filter>
+          <rect width="100%" height="100%" filter='url(#noise)'/>
+      </svg>
+    </div>
+
     <div id="other__nav_toggle" class="hoverable">
       <svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14.8984 1.77973C1.38555 5.33248 -2.3249 9.09225 1.31902 20.4928C6.73855 32.9135 11.8996 35.8776 25.4601 32.9683C37.3424 30.3009 37.1934 24.9696 36.9281 15.4819L36.9271 15.4433C37.0623 -1.8152 29.8476 -1.54363 14.8984 1.77973Z" fill="#070707"/>
@@ -668,7 +689,7 @@
                 type="text"
                 id="form__nameInput"
                 name="name"
-                class="mt-2 bg-neutral-100 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                class="input__field mt-2 border border-neutral-300 text-neutral-900 text-sm rounded-lg block w-full p-2.5"
                 required
                 aria-required="true"
               />
@@ -700,7 +721,7 @@
                 id="email-address-icon"
                 required
                 aria-required="true"
-                class="bg-neutral-100 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+                class="input__field border border-neutral-300 text-neutral-900 text-sm rounded-lg block w-full pl-10 p-2.5"
               />
             </div>
             <p class="mt-2 playfair">Your message <sup>*</sup></p>
@@ -710,7 +731,7 @@
               required
               aria-required="true"
               rows="4"
-              class="mt-2 block p-2.5 w-full text-sm text-neutral-900 bg-neutral-100 rounded-lg border border-neutral-300 focus:ring-blue-500 focus:border-blue-500"
+              class="input__field mt-2 block p-2.5 w-full text-sm text-neutral-900 rounded-lg border border-neutral-300"
             >
             </textarea>
             <button type="submit" id="form__submitButton" class="hoverable mt-4 text-white bg-neutral-900 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
@@ -725,7 +746,7 @@
     </div><!--  <- END GSAP WRAP DIV -->
 
       <footer
-        class="footer__height bg-neutral-50 border-x border-t border-neutral-900 rounded-t-2xl flex-row p-4 justify-around items-center mt-10 lg:mt-20 lg:w-12/12 mr-auto ml-auto"
+        class="footer__height border-x border-t border-neutral-900 rounded-t-2xl flex-row p-4 justify-around items-center mt-10 lg:mt-20 lg:w-12/12 mr-auto ml-auto"
       >
         <div class="flex-row lg:flex lg:justify-between">
           <div>
