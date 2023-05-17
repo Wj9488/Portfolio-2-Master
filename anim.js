@@ -172,7 +172,7 @@ function gsapNav() {
             top: "-0vh",
             right: "-0%",
             width: "100vw",
-            height: "100vh",
+            height: "100dvh",
             borderBottomLeftRadius: "50px",
             ease: "expo.inOut"
         })
