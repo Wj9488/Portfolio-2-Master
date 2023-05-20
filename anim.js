@@ -197,7 +197,7 @@ function gsapNav() {
         gsap.to("#anim__navWrapper", {
             duration: 0.5,
             opacity: 0,
-            y: -5,
+            y: -20,
         })
     }
 

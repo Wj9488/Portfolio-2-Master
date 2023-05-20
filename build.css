@@ -971,7 +971,7 @@ canvas {
 }
 
 .nav__section_helper {
-  min-height: 92vh;
+  min-height: 75vh;
   display: flex;
   align-items: start;
   justify-content: center;
