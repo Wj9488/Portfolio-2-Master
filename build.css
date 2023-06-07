@@ -743,15 +743,20 @@ canvas {
   color: #000;
   border: 1px solid #000;
 }
-/* .job__notif_bg {
-  background-color: #7cbb00;
-} */
+.job__notif_bg {
+  background-color: #fafafa;
+}
 .frame__bg {
-  background-color: #f65314;
-  color: white;
+  background-color: #fafafa;
 }
 .freelance__bg {
-  background-color: #ffbb00;
+  background-color: #fafafa;
+}
+.language__bg {
+  background: #fafafa;
+}
+.learning__bg {
+  background: #fafafa;
 }
 
 /* Header Grid */
@@ -923,7 +928,7 @@ canvas {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 1px;
   width: 0;
   border-radius: 40px;
   transition: width 0s ease, background 0.5s ease;
@@ -934,7 +939,7 @@ canvas {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 2px;
+  height: 1px;
   width: 0;
   border-radius: 40px;
   background: #070707;
