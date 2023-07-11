@@ -158,6 +158,7 @@ function gsapNav() {
     const navClose = document.getElementById("navClose")
 
     const navItem = document.querySelectorAll("#anim__navItem")
+    const staggerTargets = document.querySelectorAll(".gsap__stagger_target")
 
     navToggle.addEventListener("click", () => {
         openNav()
@@ -180,9 +181,14 @@ function gsapNav() {
             delay: 0.8,
             duration: 1,
             opacity: 1,
-            y: 5,
         })
+        gsap.staggerFrom(staggerTargets, 0.5, {
+            opacity: 0,
+            delay: 1.0, 
+            ease: "power1.inOut"
+        }, 0.2);
     }
+
     function closeNav() {
         gsap.to(".hidden__nav_container", {
             delay: 0.5,
@@ -197,7 +203,6 @@ function gsapNav() {
         gsap.to("#anim__navWrapper", {
             duration: 0.5,
             opacity: 0,
-            y: -20,
         })
     }
 

@@ -106,7 +106,7 @@
             <div class="nav__divider_line mt-4 lg:mt-4" id="anim__divider1"></div>
             <ul class="flex-row lg:flex lg:gap-5 nav__width_setter lg:flex-wrap items-center justify-start mt-4">
 
-                <a href="#services" id="anim__navItem" class="nav__z_index">
+                <a href="#services" id="anim__navItem" class="nav__z_index gsap__stagger_target">
                 <div class="flex justify-between items-center gap-5 rounded-2xl p-4 bg-white hoverable">
                     <li class="text-xl lg:text-2xl hover__link font-light">My Services</li>
                     <div>
@@ -117,7 +117,7 @@
                 </div>
               </a>
 
-              <a href="#my-skills" id="anim__navItem" class="nav__z_index">
+              <a href="#my-skills" id="anim__navItem" class="nav__z_index gsap__stagger_target">
                 <div class="mt-4 lg:mt-0 flex justify-between items-center gap-5 rounded-2xl p-4 bg-white hoverable">
                     <li class="text-xl lg:text-2xl hover__link font-light">My Skills</li>
                     <div>
@@ -128,7 +128,7 @@
                 </div>
               </a>
 
-                <a href="#my-work" id="anim__navItem" class="nav__z_index">
+                <a href="#my-work" id="anim__navItem" class="nav__z_index gsap__stagger_target">
                     <div class="mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl p-4 bg-white hoverable">
                         <li class="text-xl lg:text-2xl hover__link font-light">My work</li>
                         <div>
@@ -139,7 +139,7 @@
                     </div>
                 </a>
 
-                <a href="#about-me" id="anim__navItem" class="nav__z_index">
+                <a href="#about-me" id="anim__navItem" class="nav__z_index gsap__stagger_target">
                     <div class="mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl p-4 bg-white hoverable">
                         <li class="text-xl lg:text-2xl hover__link font-light">About me</li>
                         <div>
@@ -150,7 +150,7 @@
                     </div>
                 </a>
 
-                <a href="#my-cv" id="anim__navItem" class="nav__z_index">
+                <a href="#my-cv" id="anim__navItem" class="nav__z_index gsap__stagger_target">
                     <div class="mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl p-4 bg-white hoverable">
                         <li class="text-xl lg:text-2xl hover__link font-light">My cv</li>
                         <div>
@@ -161,7 +161,7 @@
                     </div>
                 </a>
 
-                <a href="#contact-me" id="anim__navItem" class="nav__z_index">
+                <a href="#contact-me" id="anim__navItem" class="nav__z_index gsap__stagger_target">
                     <div class="mt-4 lg:mt-0 flex items-center justify-between gap-5 rounded-2xl p-4 bg-white hoverable">
                         <li class="text-xl lg:text-2xl hover__link font-light">Contact</li>
                         <div>
@@ -222,7 +222,7 @@
     <p class="text-xs xl:text-sm font-bold">
       >> Interning at
       <br>
-      <span class="info__bar_subTxt">Array & Thousand Lines</span> 
+      <span class="info__bar_subTxt">Thousand Lines</span> 
     </p>
     <p class="text-xs xl:text-sm font-bold text-center">
       >> Studying at Exeter University <<
@@ -294,10 +294,11 @@
               </p>
             </div>
             <div id="service__grid_experience"  class="gsap__bg_change lg:mt-0 border border-neutral-900 job__notif_bg">
-              <p class="text-2xl "><span class="text-lg font-medium grotesk">Interning at Array & Thousand Lines</span></p>
+              <p class="text-2xl "><span class="text-lg font-medium grotesk">Internships</span></p>
               <div class="services__border"></div>
               <p class="text-sm mt-2">
-                Both companies are London based design agencies handling design and development of websites.
+                  This summer I was able to secure two internships. One at Array.design and the other which is still on going 
+                  at Thousand Lines. Both company's websites are linked below. 
                 <br>
                 <br>
               </p>
@@ -469,8 +470,8 @@
 
           <div id="gsap__work_kx">
           <!-- <img class="mt-6 mb-2 rounded-2xl border border-neutral-900" src="./imgs/thumb__KXKDA.png" alt="KX KDA thumbnail"> -->
-            <p class="mt-6 text-xl font__poppins">Coin Clear <sup class="sup__new text-sm">In progress</sup></p>
-            <a href="https://coinclear.co/" target="_blank" role="Link to the live site">
+            <p class="mt-6 text-xl font__poppins">Exeter Cryptocurrency Society <sup class="sup__new text-sm">In progress</sup></p>
+            <a href="https://cryptosoc.vercel.app/" target="_blank" role="Link to the live site">
               <button
                 class="hoverable border border-neutral-900  rounded-xl p-2 mt-3 flex justify-center items-center gap-2 "
               >
@@ -479,12 +480,10 @@
             </a>
             
             <p class="mt-2 ">
-              A work in progress website that will soon track all relevant data about the cryptocurrency "Kadena" (KDA). 
-              With this side project I wanted to use some of my extensive cryptocurrency and NFT knowledge and challenge myself to build a 
-              useful application that can be used to track this emerging ecosystem.
-              This application aims to track not only all tokens that are currently actively traded on the Kadena blockchain but 
-              will also scrape for relevant information on projects that are set to launch on the chain. 
-              This is the precursor application to a larger cryptocurrency application that is set to track much more complex data. 
+              A website built for the new rebrand of Exeter University's cryptocurrency society. The society wanted a more modern and corporate look to
+              attract more members. The website is built to give off a professional 
+              and minamilistic feel while presenting all relevant information about the society in one place
+              . The website is built in Next Js 13 using Framer Motion for animated page transitions and navigation menu. 
             </p>
             <div class="flex justify-start items-center flex-wrap mt-2 gap-5"  role="Website features list">
               <p class="opacity__background p-2 rounded-2xl text-sm  ">
@@ -499,11 +498,20 @@
               <p class="opacity__background p-2 rounded-2xl text-sm  ">
                 Tailwind CSS
               </p>
+              <p class="opacity__background p-2 rounded-2xl text-sm  ">
+                Manual Light and Dark mode
+              </p>
+              <p class="opacity__background p-2 rounded-2xl text-sm  ">
+                Framer Motion Animation
+              </p>
+              <p class="opacity__background p-2 rounded-2xl text-sm  ">
+                Custom SVGs
+              </p>
             </div>
           </div>
 
-          <div id="gsap__work_hrm">
-            <!-- <img class="mt-6 mb-2 rounded-2xl border border-neutral-900" src="./imgs/thumb__HRM.png" alt="HRM thumbnail"> -->
+          <!-- <div id="gsap__work_hrm">
+            <img class="mt-6 mb-2 rounded-2xl border border-neutral-900" src="./imgs/thumb__HRM.png" alt="HRM thumbnail">
             <p class="mt-6 text-xl font__poppins">HRM</p>
             <a href="https://hrmblog.netlify.app/" target="_blank" role="Link to the live site">
               <button
@@ -541,7 +549,7 @@
                 Full stack application
               </p>
             </div>
-          </div>
+          </div> -->
 
           <!-- <p class="mt-6 text-xl font__poppins">Graphicpro</p>
           <a href="https://graphicpro.netlify.app/" target="_blank" role="Link to the live site">
@@ -637,7 +645,7 @@
           </p>
         </section>
 
-        <section class="mt-10 lg:mt-6 p-4">
+        <!-- <section class="mt-10 lg:mt-6 p-4">
           <p class="text-neutral-500 text-sm playfair" id="my-cv">04</p>
           <h2 class="text-3xl text-neutral-900 mt-6 grotesk font-medium">My cv</h2>
           <a href="./cv.html">
@@ -649,10 +657,10 @@
               <ion-icon class="text-3xl" name="exit-outline"></ion-icon>
             </button>
           </a>
-        </section>
+        </section> -->
 
         <section class="mt-10 lg:mt-6 p-4">
-          <p class="text-neutral-500 text-sm playfair" id="contact-me">05</p>
+          <p class="text-neutral-500 text-sm playfair" id="contact-me">04</p>
           <h6 class="text-3xl text-neutral-900 mt-2 grotesk font-medium">Contact me</h6>
           <a href="https://www.linkedin.com/in/william-jones-450715251/" target="_blank">
             <button
@@ -662,7 +670,7 @@
             </button>
           </a>
 
-          <p class="text-neutral-900 mt-3 font-bold">or</p>
+          <p class="text-neutral-900 mt-3 font-bold">or </p>
 
           <form
             action="https://formsubmit.co/8a353b9f93929ceb9569fa7c335256ec"
