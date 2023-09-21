@@ -182,11 +182,6 @@ function gsapNav() {
             duration: 1,
             opacity: 1,
         })
-        gsap.staggerFrom(staggerTargets, 0.5, {
-            opacity: 0,
-            delay: 1.0, 
-            ease: "power1.inOut"
-        }, 0.2);
     }
 
     function closeNav() {

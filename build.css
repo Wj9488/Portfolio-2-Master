@@ -922,6 +922,14 @@ canvas {
   position: relative;
 }
 
+.image__showcase_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+  margin-bottom: 1.5rem;
+}
+
 .hover__link:before {
   content: "";
   display: block;
@@ -1038,6 +1046,9 @@ canvas {
   transform-origin: left;
   transform: scaleX(0);
 }
+.custom__margin_top {
+  margin-top: 5rem ;
+}
 @media screen and (max-width: 1180px) {
   .desktop__view_only {
     display: none;
@@ -1069,6 +1080,12 @@ canvas {
       "learning"
       ;
     } */
+    .image__showcase_grid {
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      gap: 1%;
+      margin-bottom: 3rem;
+    }
   .services__grid {
     display: flex;
     flex-direction: column;
